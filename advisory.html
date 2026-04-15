@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Strategic Advisory | THE PARADOX</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#ffb4a9",
+          "secondary": "#5f5e5e",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-container": "#8d9b8a",
+          "on-primary": "#ffffff",
+          "surface-variant": "#e5e2dd",
+          "inverse-surface": "#31302d",
+          "tertiary": "#121e12",
+          "surface-dim": "#dcdad5",
+          "secondary-container": "#e2dfde",
+          "outline-variant": "#dcc0bc",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#d8e7d3",
+          "on-primary-container": "#e87667",
+          "primary-fixed-dim": "#ffb4a9",
+          "on-error-container": "#93000a",
+          "primary-fixed": "#ffdad5",
+          "surface-container-highest": "#e5e2dd",
+          "outline": "#89726e",
+          "on-secondary-container": "#636262",
+          "surface": "#fcf9f4",
+          "on-primary-fixed": "#410001",
+          "tertiary-fixed-dim": "#bccbb7",
+          "surface-bright": "#fcf9f4",
+          "surface-tint": "#a03f34",
+          "primary-container": "#60100b",
+          "primary": "#3f0001",
+          "surface-container": "#f0ede8",
+          "on-surface": "#1c1c19",
+          "on-primary-fixed-variant": "#802820",
+          "on-background": "#1c1c19",
+          "secondary-fixed": "#e5e2e1",
+          "secondary-fixed-dim": "#c8c6c5",
+          "on-secondary": "#ffffff",
+          "on-surface-variant": "#56423f",
+          "on-tertiary": "#ffffff",
+          "error": "#ba1a1a",
+          "on-secondary-fixed-variant": "#474746",
+          "surface-container-low": "#f6f3ee",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed-variant": "#3d4a3c",
+          "inverse-on-surface": "#f3f0eb",
+          "on-tertiary-fixed": "#121e12",
+          "background": "#fcf9f4",
+          "on-secondary-fixed": "#1c1b1b",
+          "surface-container-high": "#ebe8e3",
+          "tertiary-container": "#263325"
+        },
+        borderRadius: { DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px" },
+        fontFamily: {
+          headline: ["Newsreader"],
+          body: ["Manrope"],
+          label: ["Manrope"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+  body { font-family: 'Manrope', sans-serif; }
+  h1, h2, h3 { font-family: 'Newsreader', serif; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary">
+
+<!-- TopNavBar -->
+<nav class="bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
+    <a href="index.html" class="text-2xl font-['Newsreader'] font-bold tracking-tighter text-[#1c1c19] dark:text-[#fcf9f4]">
+      THE PARADOX
+    </a>
+    <div class="hidden md:flex items-center space-x-12">
+      <a class="text-[#3f0001] dark:text-[#dcc0bc] font-bold border-b border-[#3f0001] font-['Manrope'] uppercase tracking-[0.1em] text-[10px] transition-colors duration-300" href="advisory.html">ADVISORY</a>
+      <a class="text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] font-['Manrope'] uppercase tracking-[0.1em] text-[10px] transition-colors duration-300" href="research.html">RESEARCH</a>
+      <a class="text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] font-['Manrope'] uppercase tracking-[0.1em] text-[10px] transition-colors duration-300" href="about.html">ABOUT</a>
+    </div>
+    <a href="inquiry.html" class="bg-primary text-on-primary px-6 py-2 text-[10px] tracking-[0.2em] font-['Manrope'] uppercase hover:bg-primary-container transition-colors duration-300">
+      INQUIRY
+    </a>
+  </div>
+</nav>
+
+<main class="pt-32">
+
+  <!-- Hero -->
+  <section class="max-w-[1440px] mx-auto px-12 mb-32">
+    <div class="grid grid-cols-12 gap-8">
+      <div class="col-span-12 lg:col-span-8">
+        <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary mb-6 block">Board-Level Engagement</span>
+        <h1 class="text-7xl lg:text-8xl italic font-light leading-[1.1] tracking-tight mb-12">
+          Navigating the <span class="font-normal italic">monolith</span> of intelligence.
+        </h1>
+      </div>
+      <div class="col-span-12 lg:col-span-4 flex items-end pb-4">
+        <p class="text-lg leading-relaxed text-secondary border-l border-outline-variant pl-8 py-4 italic">
+          Strategic advisory for leadership who demand more than algorithmic efficiency. We architect the bridge between human judgment and artificial foresight.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decision Architecture -->
+  <section class="bg-surface-container-low py-32">
+    <div class="max-w-[1440px] mx-auto px-12">
+      <div class="mb-20">
+        <h2 class="text-4xl italic mb-4">Decision Architecture</h2>
+        <p class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-on-surface/40">The Proprietary Framework</p>
+      </div>
+      <div class="grid grid-cols-12 gap-px bg-outline-variant/20 border border-outline-variant/20">
+        <div class="col-span-12 md:col-span-6 bg-surface p-12 aspect-[4/3] flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <span class="material-symbols-outlined text-primary text-3xl">account_tree</span>
+            <span class="font-['Manrope'] text-[10px] text-on-surface/30">01 / ARCHITECTURE</span>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Synaptic Governance</h3>
+            <p class="text-sm leading-relaxed text-on-surface-variant max-w-sm">
+              We replace standard hierarchical reporting with synaptic feedback loops, ensuring AI outputs are never isolated from the human context of the boardroom.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 bg-surface p-12 aspect-[4/3] flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <span class="material-symbols-outlined text-primary text-3xl">cognition</span>
+            <span class="font-['Manrope'] text-[10px] text-on-surface/30">02 / INTERFACE</span>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Augmented Intuition</h3>
+            <p class="text-sm leading-relaxed text-on-surface-variant max-w-sm">
+              Designing internal frameworks that treat AI as a cognitive extension rather than an external tool. We map machine logic to your specific executive culture.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-12 bg-surface p-12 lg:p-24 grid lg:grid-cols-2 gap-12 items-center">
+          <div class="relative aspect-video w-full overflow-hidden">
+            <img alt="The Paradox Advisory Office" class="w-full h-full object-cover filter grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD85E9wi_Qdul8isr4xCS4S8D9T-PySmzcUoRHWiXgYB88QIxU_VztEOjNjRnyjwIuaKtFyM_aDmIyO2J1RLixWSRoRYbbGRYGa6tEEFQZDkNfDc8AXqEUUk7ffxegP7WU3ehsoJYCOwsXDCeHEl3nWOcFexuWbb1j1Yqf2W9QtLRxA8D5u2FCZfvptGgFAND8mg7bcudQIT0UWPJ09Mrg0a25rzr4F1agcoxEsfaeAvPPW5XCIwdSfsULD6v1S7fGsIgrXUtnRhsd"/>
+          </div>
+          <div class="lg:pl-12">
+            <h3 class="text-5xl italic mb-6">The Machine-Human Synthesis</h3>
+            <p class="text-lg leading-relaxed text-on-surface-variant mb-8">
+              Current AI integration fails because it treats technology as a plugin. We treat it as an evolutionary step in decision-making architecture.
+            </p>
+            <div class="flex items-center space-x-2">
+              <div class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></div>
+              <span class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px]">Active Synthesis Framework</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement Models -->
+  <section class="py-32 max-w-[1440px] mx-auto px-12">
+    <div class="grid grid-cols-12 gap-12">
+      <div class="col-span-12 lg:col-span-5">
+        <h2 class="text-6xl leading-tight mb-8">On your terms. <br/><span class="italic font-light">Defined structure.</span></h2>
+        <p class="text-secondary leading-relaxed mb-12">
+          We reject the model of perpetual presence. Continuous consulting breeds dependency. The Paradox provides structured intellectual weight only when the stakes demand it.
+        </p>
+        <a href="inquiry.html" class="inline-block border border-primary text-primary px-10 py-4 font-['Manrope'] uppercase tracking-[0.1em] text-xs hover:bg-primary hover:text-on-primary transition-all duration-300">
+          View Engagement Models
+        </a>
+      </div>
+      <div class="col-span-12 lg:col-span-6 lg:offset-1">
+        <div class="space-y-12">
+          <div class="group border-b border-outline-variant/30 pb-12">
+            <div class="flex justify-between items-baseline mb-4">
+              <h4 class="text-2xl font-bold tracking-tight">The Quarterly Audit</h4>
+              <span class="text-primary material-symbols-outlined">history_edu</span>
+            </div>
+            <p class="text-sm text-on-surface-variant max-w-md">
+              A high-density intellectual review of your AI integration, highlighting points of decay in human oversight.
+            </p>
+          </div>
+          <div class="group border-b border-outline-variant/30 pb-12">
+            <div class="flex justify-between items-baseline mb-4">
+              <h4 class="text-2xl font-bold tracking-tight">Surgical Interventions</h4>
+              <span class="text-primary material-symbols-outlined">precision_manufacturing</span>
+            </div>
+            <p class="text-sm text-on-surface-variant max-w-md">
+              Targeted architectural adjustments for high-stakes decision cycles (M&amp;A, global market pivots, structural reorganization).
+            </p>
+          </div>
+          <div class="group pb-12">
+            <div class="flex justify-between items-baseline mb-4">
+              <h4 class="text-2xl font-bold tracking-tight">Executive Dossier</h4>
+              <span class="text-primary material-symbols-outlined">article</span>
+            </div>
+            <p class="text-sm text-on-surface-variant max-w-md">
+              Private, monthly intelligence synthesis custom-built for the principal's specific cognitive style.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Governance -->
+  <section class="bg-surface-container-highest py-32">
+    <div class="max-w-[1440px] mx-auto px-12">
+      <div class="grid grid-cols-12 items-center">
+        <div class="col-span-12 lg:col-span-7">
+          <div class="bg-surface p-16 shadow-sm">
+            <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary mb-8 block">The Governance Paradox</span>
+            <h2 class="text-5xl italic leading-tight mb-8">
+              Why current frameworks are destined to fail.
+            </h2>
+            <div class="space-y-6 text-on-surface-variant leading-relaxed">
+              <p>
+                Most governance structures are built on the assumption that AI is an "asset" like a factory or a software license. This is a fundamental category error.
+              </p>
+              <p>
+                AI is an <span class="italic text-on-surface">emergent participant</span> in your organization. Governance must evolve from static "compliance lists" to dynamic behavioral boundaries.
+              </p>
+              <p>
+                The Paradox designs governance that is invisible but absolute—ensuring that every automated insight has a lineage of accountability back to the human board.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5 p-12">
+          <div class="space-y-16">
+            <div class="border-l-2 border-primary pl-8">
+              <div class="text-4xl italic font-serif mb-2">94%</div>
+              <div class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-on-surface/40">Of board-level AI initiatives lack human-feedback accountability.</div>
+            </div>
+            <div class="border-l-2 border-primary pl-8">
+              <div class="text-4xl italic font-serif mb-2">1.6s</div>
+              <div class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-on-surface/40">The latency gap where automated decisions outpace human oversight.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-40 text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-5xl italic mb-8">Request a confidential consultation.</h2>
+      <p class="text-secondary mb-12">Our advisory is limited to select engagements to ensure intellectual density.</p>
+      <a class="inline-block bg-primary text-on-primary px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-xs transition-colors duration-300 hover:bg-primary-container" href="inquiry.html">
+        Inquire via Secure Channel
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#f6f3ee] dark:bg-[#151512] py-20 mt-auto border-t border-outline-variant/10">
+  <div class="grid grid-cols-12 gap-8 items-end w-full px-12 max-w-[1440px] mx-auto">
+    <div class="col-span-12 lg:col-span-4">
+      <div class="text-lg font-['Newsreader'] text-[#1c1c19] dark:text-[#fcf9f4] mb-4">THE PARADOX</div>
+      <div class="text-[#3f0001] dark:text-[#dcc0bc] font-['Manrope'] uppercase tracking-[0.1em] text-[10px]">
+        Intelligence Architecture &amp; Strategic Advisory
+      </div>
+    </div>
+    <div class="col-span-12 lg:col-span-4 flex space-x-8 lg:justify-center">
+      <a class="text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] font-['Manrope'] uppercase tracking-[0.1em] text-[10px] transition-colors duration-300" href="#">PRIVACY</a>
+      <a class="text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] font-['Manrope'] uppercase tracking-[0.1em] text-[10px] transition-colors duration-300" href="#">GOVERNANCE</a>
+      <a class="text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] font-['Manrope'] uppercase tracking-[0.1em] text-[10px] transition-colors duration-300" href="#">TERMS</a>
+    </div>
+    <div class="col-span-12 lg:col-span-4 lg:text-right">
+      <div class="text-[#1c1c19]/40 font-['Manrope'] uppercase tracking-[0.1em] text-[10px]">
+        © 2024 THE PARADOX. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
