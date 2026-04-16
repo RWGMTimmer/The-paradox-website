@@ -47,11 +47,24 @@
   }
   .form-field { border-bottom: 1px solid #dcc0bc; background: transparent; transition: border-color 0.3s ease; }
 </style>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <meta property="og:title" content="Inquiry | The Paradox"/>
+  <meta property="og:description" content="Begin the inquiry. A direct line to The Paradox for boards, executives, and institutions considering engagement."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://the-paradox.com/inquiry.html"/>
+  <meta property="og:image" content="https://the-paradox.com/favicon-512.png"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Inquiry | The Paradox"/>
+  <meta name="twitter:description" content="Begin the inquiry. A direct line to The Paradox for boards, executives, and institutions considering engagement."/>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
 
 <nav class="bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl fixed top-0 left-0 right-0 z-50 border-b border-outline-variant/20">
-  <div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
+  <div class="flex justify-between items-center w-full px-6 md:px-12 py-6 max-w-[1440px] mx-auto">
     <a href="index.html" class="text-2xl font-['Newsreader'] font-bold tracking-tighter text-[#1c1c19] dark:text-[#fcf9f4]">
       THE PARADOX
     </a>
@@ -64,15 +77,47 @@
       INQUIRY
     </a>
   </div>
-</nav>
+
+    <!-- Mobile hamburger -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5" aria-label="Menu">
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
+      <span class="block w-4 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] ml-0"></span>
+    </button>
+  </nav>
+<!-- Mobile menu overlay -->
+<div id="mobileMenu" class="fixed inset-0 z-[60] bg-[#fcf9f4] dark:bg-[#1c1c19]" style="display:none;">
+  <div class="flex flex-col justify-center items-center h-full">
+    <button id="closeMenu" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center" aria-label="Close menu">
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] rotate-45 absolute"></span>
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] -rotate-45 absolute"></span>
+    </button>
+    <nav class="flex flex-col items-center gap-10">
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="advisory.html">Advisory</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="research.html">Research</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="about.html">About</a>
+      <a class="mt-6 bg-[#3f0001] text-white px-8 py-3 font-['Manrope'] uppercase tracking-[0.2em] text-xs" href="inquiry.html">Inquiry</a>
+    </nav>
+  </div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu'),c=document.getElementById('closeMenu');
+  if(!b||!m||!c)return;
+  b.onclick=function(){m.style.display='flex';};
+  c.onclick=function(){m.style.display='none';};
+  m.querySelectorAll('a').forEach(function(a){a.onclick=function(){m.style.display='none';};});
+})();
+</script>
+
 
 <main class="pt-32">
 
-  <section class="max-w-[1440px] mx-auto px-12 py-24">
+  <section class="max-w-[1440px] mx-auto px-6 md:px-12 py-24">
     <div class="grid grid-cols-12 gap-8 mb-24">
       <div class="col-span-12 lg:col-span-9">
         <span class="font-['Manrope'] uppercase tracking-[0.3em] text-[10px] text-primary mb-8 block">Direct Line</span>
-        <h1 class="text-7xl md:text-8xl font-headline leading-[0.95] tracking-tighter mb-12">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-headline leading-[0.95] tracking-tighter mb-12">
           Begin the <span class="italic text-primary">inquiry</span>.
         </h1>
         <div class="max-w-2xl">
@@ -83,7 +128,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-12 gap-16">
+    <div class="grid grid-cols-12 gap-8 md:gap-16">
 
       <form action="https://formspree.io/f/xjgjywnk" method="POST" class="col-span-12 lg:col-span-8">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
@@ -139,23 +184,23 @@
         </div>
 
         <div class="border-t border-outline-variant/40 pt-12 flex justify-end">
-          <button id="submitBtn" class="group bg-primary text-on-primary px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-[12px] hover:bg-primary-container transition-all flex items-center gap-4" type="submit">
+          <button id="submitBtn" class="group bg-primary text-on-primary px-6 md:px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-[12px] hover:bg-primary-container transition-all flex items-center gap-4" type="submit">
             <span id="submitText">Send inquiry</span>
             <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </button>
         </div>
 
         <div id="formSuccess" class="hidden border-t border-outline-variant/40 pt-12 mt-12">
-          <div class="bg-surface-container-low p-12">
+          <div class="bg-surface-container-low p-6 md:p-12">
             <h3 class="text-3xl font-headline mb-4">Inquiry received.</h3>
             <p class="text-on-surface-variant leading-relaxed">Thank you. Robert will respond personally. All correspondence is treated as confidential.</p>
           </div>
         </div>
 
         <div id="formError" class="hidden border-t border-outline-variant/40 pt-12 mt-12">
-          <div class="bg-error-container p-12">
+          <div class="bg-error-container p-6 md:p-12">
             <h3 class="text-3xl font-headline mb-4 text-on-error-container">Something went wrong.</h3>
-            <p class="text-on-error-container/80 leading-relaxed">Please try again, or email <a href="mailto:robert.timmer@the-paradox.com" class="underline">robert.timmer@the-paradox.com</a> directly.</p>
+            <p class="text-on-error-container/80 leading-relaxed">Please try again, or email <a href="mailto:info@the-paradox.com" class="underline">info@the-paradox.com</a> directly.</p>
           </div>
         </div>
 
@@ -204,8 +249,8 @@
 
           <div>
             <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary block mb-4">Direct correspondence</span>
-            <a href="mailto:robert.timmer@the-paradox.com" class="text-sm leading-relaxed text-on-surface hover:text-primary transition-colors underline-offset-4 hover:underline">
-              robert.timmer@the-paradox.com
+            <a href="mailto:info@the-paradox.com" class="text-sm leading-relaxed text-on-surface hover:text-primary transition-colors underline-offset-4 hover:underline">
+              info@the-paradox.com
             </a>
           </div>
 
@@ -231,7 +276,7 @@
 </main>
 
 <footer class="bg-[#f6f3ee] dark:bg-[#151512] py-20 border-t border-outline-variant/10">
-  <div class="grid grid-cols-12 gap-8 items-end w-full px-12 max-w-[1440px] mx-auto">
+  <div class="grid grid-cols-12 gap-8 items-end w-full px-6 md:px-12 max-w-[1440px] mx-auto">
     <div class="col-span-12 lg:col-span-4">
       <div class="text-lg font-['Newsreader'] text-[#1c1c19] dark:text-[#fcf9f4] mb-4">THE PARADOX</div>
       <div class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc]">

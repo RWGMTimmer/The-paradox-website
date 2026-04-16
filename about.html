@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>About | The Paradox</title>
-<meta name="description" content="The Paradox is led by Robert Timmer, a strategic programme director with 25+ years in financial services, financials, fintech, and financial inclusion across Europe, frontier markets."/>
+<meta name="description" content="The Paradox is led by Robert Timmer, a strategic programme director with 25+ years in financial services, fintech, and financial inclusion across frontier markets."/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -43,11 +43,24 @@
   h1, h2, h3 { font-family: 'Newsreader', serif; }
   .text-justify-custom { text-align: justify; text-justify: inter-word; }
 </style>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <meta property="og:title" content="About | The Paradox"/>
+  <meta property="og:description" content="The Paradox is led by Robert Timmer. 25+ years in financial services, fintech, and financial inclusion across frontier markets."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://the-paradox.com/about.html"/>
+  <meta property="og:image" content="https://the-paradox.com/favicon-512.png"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="About | The Paradox"/>
+  <meta name="twitter:description" content="The Paradox is led by Robert Timmer. 25+ years in financial services, fintech, and financial inclusion across frontier markets."/>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 
 <nav class="bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl fixed top-0 z-50 w-full">
-  <div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
+  <div class="flex justify-between items-center w-full px-6 md:px-12 py-6 max-w-[1440px] mx-auto">
     <a href="index.html" class="text-2xl font-['Newsreader'] font-bold tracking-tighter text-[#1c1c19] dark:text-[#fcf9f4]">
       THE PARADOX
     </a>
@@ -60,15 +73,47 @@
       </a>
     </div>
   </div>
-</nav>
+
+    <!-- Mobile hamburger -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5" aria-label="Menu">
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
+      <span class="block w-4 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] ml-0"></span>
+    </button>
+  </nav>
+<!-- Mobile menu overlay -->
+<div id="mobileMenu" class="fixed inset-0 z-[60] bg-[#fcf9f4] dark:bg-[#1c1c19]" style="display:none;">
+  <div class="flex flex-col justify-center items-center h-full">
+    <button id="closeMenu" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center" aria-label="Close menu">
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] rotate-45 absolute"></span>
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] -rotate-45 absolute"></span>
+    </button>
+    <nav class="flex flex-col items-center gap-10">
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="advisory.html">Advisory</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="research.html">Research</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="about.html">About</a>
+      <a class="mt-6 bg-[#3f0001] text-white px-8 py-3 font-['Manrope'] uppercase tracking-[0.2em] text-xs" href="inquiry.html">Inquiry</a>
+    </nav>
+  </div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu'),c=document.getElementById('closeMenu');
+  if(!b||!m||!c)return;
+  b.onclick=function(){m.style.display='flex';};
+  c.onclick=function(){m.style.display='none';};
+  m.querySelectorAll('a').forEach(function(a){a.onclick=function(){m.style.display='none';};});
+})();
+</script>
+
 
 <main class="pt-32">
 
-  <section class="max-w-[1440px] mx-auto px-12 pb-24 border-none">
+  <section class="max-w-[1440px] mx-auto px-6 md:px-12 pb-24 border-none">
     <div class="grid grid-cols-12 gap-8">
       <div class="col-span-12 md:col-span-8">
         <p class="font-label uppercase tracking-[0.2em] text-[10px] text-primary mb-6">The Firm</p>
-        <h1 class="text-7xl md:text-8xl font-headline italic tracking-tight leading-[0.9] mb-12">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-headline italic tracking-tight leading-[0.9] mb-12">
           Decisions, designed <br/>with <span class="text-primary-container">intent</span>.
         </h1>
       </div>
@@ -80,9 +125,9 @@
     </div>
   </section>
 
-  <section class="bg-surface-container-low py-32">
-    <div class="max-w-[1440px] mx-auto px-12">
-      <div class="grid grid-cols-12 gap-16 items-start">
+  <section class="bg-surface-container-low py-16 md:py-32">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-12 gap-8 md:gap-16 items-start">
         <div class="col-span-12 md:col-span-5 relative aspect-[4/5] bg-surface-container-highest overflow-hidden">
           <img alt="Portrait of Robert Timmer" class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700" src="robert-timmer.png"/>
           <div class="absolute bottom-0 right-0 p-8 bg-surface-container-lowest/90 backdrop-blur-md">
@@ -90,17 +135,16 @@
           </div>
         </div>
         <div class="col-span-12 md:col-span-7">
-          <h2 class="text-5xl font-headline mb-8">The Founder</h2>
+          <h2 class="text-2xl md:text-4xl lg:text-5xl font-headline mb-8">The Founder</h2>
           <div class="space-y-6 text-on-surface-variant text-justify-custom leading-relaxed max-w-2xl">
             <p>
-              Robert Timmer is a strategic programme director with 25+ years in financial services, fintech, and financial inclusion, spanning founder and CIO/CTO roles across frontier markets in Africa, Asia, the Pacific, and the Americas.
+              Robert Timmer is a strategic programme director with 25+ years in financial services, fintech, and financial inclusion, spanning founder and CTO roles across frontier markets in Africa, Asia, the Pacific, and the Americas.
             </p>
             <p>
               He is a pattern recogniser, drawn to structural problems before they are articulated. The same instinct that shaped his work in financial inclusion — seeing where systems fail the people meant to rely on them — now sits at the centre of <span class="font-headline italic text-on-surface">The Paradox</span>: the structural dynamics of human–AI decision-making.
             </p>
             <p>
-              <p>
-              He currently serves as programme manager for a institutional transformation initiative, working directly with boards, executives, and governance professionals — the audience The Paradox serves.
+              He currently serves as programme manager for a major institutional transformation initiative, working directly with boards, executives, and governance professionals — the audience The Paradox serves.
             </p>
             <div class="pt-8 grid grid-cols-2 gap-8 border-t border-outline-variant/30">
               <div>
@@ -108,7 +152,7 @@
                 <span class="font-label uppercase tracking-[0.1em] text-[9px]">Years of practice</span>
               </div>
               <div>
-                <span class="block text-2xl font-headline text-primary">5</span>
+                <span class="block text-2xl font-headline text-primary">4</span>
                 <span class="font-label uppercase tracking-[0.1em] text-[9px]">Continents worked</span>
               </div>
             </div>
@@ -119,10 +163,10 @@
   </section>
 
   <section class="py-32 bg-surface">
-    <div class="max-w-[1440px] mx-auto px-12">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
       <div class="max-w-4xl mx-auto text-center mb-24">
         <span class="font-label uppercase tracking-[0.2em] text-[10px] text-secondary mb-4 block">What we stand for</span>
-        <h3 class="text-6xl font-headline italic mb-8">Operating constraints, not aspirations.</h3>
+        <h3 class="text-3xl md:text-5xl lg:text-6xl font-headline italic mb-8">Operating constraints, not aspirations.</h3>
         <p class="text-xl font-body text-on-surface-variant leading-relaxed">
           These are not positioning statements. They are the conditions under which the work is done.
         </p>
@@ -166,11 +210,11 @@
     <div class="absolute inset-0 opacity-10">
       <img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgMzkNh6Np5i4pyIBgeC_rrs-9Wv8IJuiodF5V_PG7lKNumoaSAPhWCBKj4mE7rcT8DocltKzDHdev23u8nHfJzTTRXxZ-8tGhoUCZ_cqKypkcABwHTEorg30ZVwXJPGbs_x4UPz7qqpZ40IPqC27AxFl8Cw3len7ujYF7p-lc6z5uika_rZ3pAN7xqNFv9Hs6T9lNdCoM3toDpTc43Bsw4iuiPOvOEX6icQTxlKijLoDSuD5DyplyNPMSJVSi1WEuSHtrIvJINr-n"/>
     </div>
-    <div class="max-w-[1440px] mx-auto px-12 relative z-10">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
       <div class="grid grid-cols-12 gap-8">
         <div class="col-span-12 md:col-span-8">
           <span class="font-label uppercase tracking-[0.3em] text-[10px] text-outline-variant mb-8 block">Vision</span>
-          <h2 class="text-6xl md:text-8xl font-headline italic leading-[1] mb-12">
+          <h2 class="text-4xl md:text-6xl lg:text-8xl font-headline italic leading-[1] mb-12">
             Decision quality as a designed <span class="text-inverse-primary">capability</span>.
           </h2>
         </div>
@@ -192,7 +236,7 @@
 </main>
 
 <footer class="bg-[#f6f3ee] dark:bg-[#151512] py-20">
-  <div class="grid grid-cols-12 gap-8 items-end w-full px-12 max-w-[1440px] mx-auto">
+  <div class="grid grid-cols-12 gap-8 items-end w-full px-6 md:px-12 max-w-[1440px] mx-auto">
     <div class="col-span-12 md:col-span-4">
       <div class="text-lg font-['Newsreader'] text-[#1c1c19] dark:text-[#fcf9f4] mb-8">THE PARADOX</div>
       <p class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc]">

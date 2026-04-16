@@ -42,11 +42,24 @@
   body { background-color: #fcf9f4; color: #1c1c19; font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
   .newsreader-italic { font-family: 'Newsreader'; font-style: italic; }
 </style>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <meta property="og:title" content="The Paradox — Better decisions. By design."/>
+  <meta property="og:description" content="Strategic advisory and research on human–AI decision-making. The Paradox works on what happens to decision quality when AI enters the room."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://the-paradox.com/"/>
+  <meta property="og:image" content="https://the-paradox.com/favicon-512.png"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="The Paradox — Better decisions. By design."/>
+  <meta name="twitter:description" content="Strategic advisory and research on human–AI decision-making. The Paradox works on what happens to decision quality when AI enters the room."/>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
 
 <header class="bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl fixed top-0 z-50 w-full transition-all duration-300">
-  <nav class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
+  <nav class="flex justify-between items-center w-full px-6 md:px-12 py-6 max-w-[1440px] mx-auto">
     <a href="index.html" class="text-2xl font-['Newsreader'] font-bold tracking-tighter text-[#1c1c19] dark:text-[#fcf9f4]">
       THE PARADOX
     </a>
@@ -58,16 +71,48 @@
     <a href="inquiry.html" class="bg-primary text-on-primary px-6 py-2 text-[10px] tracking-[0.2em] font-['Manrope'] uppercase hover:bg-primary-container transition-all duration-300">
       INQUIRY
     </a>
+  
+    <!-- Mobile hamburger -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5" aria-label="Menu">
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
+      <span class="block w-4 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] ml-0"></span>
+    </button>
   </nav>
 </header>
+<!-- Mobile menu overlay -->
+<div id="mobileMenu" class="fixed inset-0 z-[60] bg-[#fcf9f4] dark:bg-[#1c1c19]" style="display:none;">
+  <div class="flex flex-col justify-center items-center h-full">
+    <button id="closeMenu" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center" aria-label="Close menu">
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] rotate-45 absolute"></span>
+      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] -rotate-45 absolute"></span>
+    </button>
+    <nav class="flex flex-col items-center gap-10">
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="advisory.html">Advisory</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="research.html">Research</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="about.html">About</a>
+      <a class="mt-6 bg-[#3f0001] text-white px-8 py-3 font-['Manrope'] uppercase tracking-[0.2em] text-xs" href="inquiry.html">Inquiry</a>
+    </nav>
+  </div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu'),c=document.getElementById('closeMenu');
+  if(!b||!m||!c)return;
+  b.onclick=function(){m.style.display='flex';};
+  c.onclick=function(){m.style.display='none';};
+  m.querySelectorAll('a').forEach(function(a){a.onclick=function(){m.style.display='none';};});
+})();
+</script>
+
 
 <main>
 
-  <section class="min-h-screen flex flex-col justify-center px-12 pt-24 max-w-[1440px] mx-auto">
+  <section class="min-h-screen flex flex-col justify-center px-6 md:px-12 pt-24 max-w-[1440px] mx-auto">
     <div class="grid grid-cols-12 gap-8">
       <div class="col-span-12 lg:col-span-10 xl:col-span-9">
         <span class="font-['Manrope'] uppercase tracking-[0.3em] text-[10px] text-primary mb-8 block">Better decisions. By design.</span>
-        <h1 class="font-headline text-7xl md:text-8xl lg:text-9xl tracking-tight leading-[0.9] text-on-surface mb-12">
+        <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight leading-[0.9] text-on-surface mb-12">
           A <span class="newsreader-italic text-primary">paradox</span> is a truth that contradicts itself, <span class="newsreader-italic">and yet holds.</span>
         </h1>
         <div class="flex items-center gap-6">
@@ -81,8 +126,8 @@
     </div>
   </section>
 
-  <section class="bg-surface-container-low py-32">
-    <div class="max-w-[1440px] mx-auto px-12 grid grid-cols-12 gap-8">
+  <section class="bg-surface-container-low py-16 md:py-32">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-12 gap-8">
       <div class="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
         <p class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary font-bold">The Paradox</p>
         <h2 class="font-headline text-4xl mt-4 leading-tight">AI was built to improve decisions.</h2>
@@ -99,16 +144,16 @@
   </section>
 
   <section class="py-32 bg-surface">
-    <div class="max-w-[1440px] mx-auto px-12">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
       <div class="relative overflow-hidden bg-on-surface h-[600px]">
         <img alt="" class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfwe5ow1HS-sb5RuAnxqDDC33OhK80rXbsYB8wJnch_iWalRutziL0751THAriUKIUdcasiZhZvpxM_GTaczb0CIYsZo6F_Sb_sggg6zh3DVhFp1jSZOhMzIk-klE_n9mfLLxNP5_Jv2uGCK64gOYMddLVXmZAY_sD3ZY38M4V7stbcEluIDqaj6_PRbmysO0-DyzZ2MIHrjPAW5jxxvKvrLe1pt4RMghOMrbldcs3EFx_C5I4VTm1xoe4cqK_DTZu-go0xlhu0UxC"/>
-        <div class="relative z-10 h-full flex flex-col justify-end p-12 lg:p-24">
+        <div class="relative z-10 h-full flex flex-col justify-end p-6 md:p-12 lg:p-16 xl:p-24">
           <div class="max-w-2xl">
             <span class="inline-flex items-center gap-3 mb-6">
               <span class="w-2 h-2 bg-primary rounded-full"></span>
               <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-surface-container-lowest">Where we work</span>
             </span>
-            <h3 class="font-headline text-5xl text-surface-container-lowest leading-tight mb-8">
+            <h3 class="font-headline text-2xl md:text-4xl lg:text-5xl text-surface-container-lowest leading-tight mb-8">
               Where human judgment meets artificial intelligence.
             </h3>
             <p class="text-surface-variant/80 font-body text-lg leading-relaxed">
@@ -121,7 +166,7 @@
   </section>
 
   <section class="py-32 bg-surface">
-    <div class="max-w-[1440px] mx-auto px-12">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
       <div class="mb-16">
         <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary">Three modes of work</span>
       </div>
@@ -148,7 +193,7 @@
             <span class="material-symbols-outlined text-primary text-sm">arrow_forward</span>
           </div>
         </a>
-        <div class="col-span-12 md:col-span-4 py-20 pl-8">
+        <div class="col-span-12 md:col-span-4 py-20 pl-0 md:pl-8">
           <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-secondary">03 / Infrastructure</span>
           <h4 class="font-headline text-3xl mt-6 mb-8">Decision Buddy</h4>
           <p class="font-body text-on-surface-variant leading-relaxed mb-12 max-w-md text-sm">
@@ -163,10 +208,10 @@
   </section>
 
   <section class="py-48 bg-surface-container-highest">
-    <div class="max-w-[1440px] mx-auto px-12 text-center">
-      <h2 class="font-headline text-6xl md:text-7xl mb-8 text-on-surface">Begin the inquiry.</h2>
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12 text-center">
+      <h2 class="font-headline text-4xl md:text-6xl lg:text-7xl mb-8 text-on-surface">Begin the inquiry.</h2>
       <p class="text-secondary max-w-xl mx-auto mb-12 leading-relaxed">Every inquiry receives a personal response.</p>
-      <a class="inline-block bg-primary text-on-primary px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-[12px] hover:bg-primary-container transition-all" href="inquiry.html">
+      <a class="inline-block bg-primary text-on-primary px-6 md:px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-[12px] hover:bg-primary-container transition-all" href="inquiry.html">
         Request Consultation
       </a>
     </div>
@@ -175,7 +220,7 @@
 </main>
 
 <footer class="bg-[#f6f3ee] dark:bg-[#151512] py-20">
-  <div class="grid grid-cols-12 gap-8 items-end w-full px-12 max-w-[1440px] mx-auto">
+  <div class="grid grid-cols-12 gap-8 items-end w-full px-6 md:px-12 max-w-[1440px] mx-auto">
     <div class="col-span-12 lg:col-span-4">
       <div class="text-lg font-['Newsreader'] text-[#1c1c19] dark:text-[#fcf9f4] mb-4">THE PARADOX</div>
       <div class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc]">
