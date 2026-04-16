@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Research | THE PARADOX</title>
+<title>Research | The Paradox</title>
+<meta name="description" content="Original qualitative research on human–AI decision-making. Frameworks and publications grounded in interviews with executives and board members across sectors."/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -13,60 +14,25 @@
     theme: {
       extend: {
         colors: {
-          "inverse-primary": "#ffb4a9",
-          "secondary": "#5f5e5e",
-          "surface-container-lowest": "#ffffff",
-          "on-tertiary-container": "#8d9b8a",
-          "on-primary": "#ffffff",
-          "surface-variant": "#e5e2dd",
-          "inverse-surface": "#31302d",
-          "tertiary": "#121e12",
-          "surface-dim": "#dcdad5",
-          "secondary-container": "#e2dfde",
-          "outline-variant": "#dcc0bc",
-          "on-error": "#ffffff",
-          "tertiary-fixed": "#d8e7d3",
-          "on-primary-container": "#e87667",
-          "primary-fixed-dim": "#ffb4a9",
-          "on-error-container": "#93000a",
-          "primary-fixed": "#ffdad5",
-          "surface-container-highest": "#e5e2dd",
-          "outline": "#89726e",
-          "on-secondary-container": "#636262",
-          "surface": "#fcf9f4",
-          "on-primary-fixed": "#410001",
-          "tertiary-fixed-dim": "#bccbb7",
-          "surface-bright": "#fcf9f4",
-          "surface-tint": "#a03f34",
-          "primary-container": "#60100b",
-          "primary": "#3f0001",
-          "surface-container": "#f0ede8",
-          "on-surface": "#1c1c19",
-          "on-primary-fixed-variant": "#802820",
-          "on-background": "#1c1c19",
-          "secondary-fixed": "#e5e2e1",
-          "secondary-fixed-dim": "#c8c6c5",
-          "on-secondary": "#ffffff",
-          "on-surface-variant": "#56423f",
-          "on-tertiary": "#ffffff",
-          "error": "#ba1a1a",
-          "on-secondary-fixed-variant": "#474746",
-          "surface-container-low": "#f6f3ee",
-          "error-container": "#ffdad6",
-          "on-tertiary-fixed-variant": "#3d4a3c",
-          "inverse-on-surface": "#f3f0eb",
-          "on-tertiary-fixed": "#121e12",
-          "background": "#fcf9f4",
-          "on-secondary-fixed": "#1c1b1b",
-          "surface-container-high": "#ebe8e3",
-          "tertiary-container": "#263325"
+          "inverse-primary": "#ffb4a9", "secondary": "#5f5e5e", "surface-container-lowest": "#ffffff",
+          "on-tertiary-container": "#8d9b8a", "on-primary": "#ffffff", "surface-variant": "#e5e2dd",
+          "inverse-surface": "#31302d", "tertiary": "#121e12", "surface-dim": "#dcdad5",
+          "secondary-container": "#e2dfde", "outline-variant": "#dcc0bc", "on-error": "#ffffff",
+          "tertiary-fixed": "#d8e7d3", "on-primary-container": "#e87667", "primary-fixed-dim": "#ffb4a9",
+          "on-error-container": "#93000a", "primary-fixed": "#ffdad5", "surface-container-highest": "#e5e2dd",
+          "outline": "#89726e", "on-secondary-container": "#636262", "surface": "#fcf9f4",
+          "on-primary-fixed": "#410001", "tertiary-fixed-dim": "#bccbb7", "surface-bright": "#fcf9f4",
+          "surface-tint": "#a03f34", "primary-container": "#60100b", "primary": "#3f0001",
+          "surface-container": "#f0ede8", "on-surface": "#1c1c19", "on-primary-fixed-variant": "#802820",
+          "on-background": "#1c1c19", "secondary-fixed": "#e5e2e1", "secondary-fixed-dim": "#c8c6c5",
+          "on-secondary": "#ffffff", "on-surface-variant": "#56423f", "on-tertiary": "#ffffff",
+          "error": "#ba1a1a", "on-secondary-fixed-variant": "#474746", "surface-container-low": "#f6f3ee",
+          "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#3d4a3c", "inverse-on-surface": "#f3f0eb",
+          "on-tertiary-fixed": "#121e12", "background": "#fcf9f4", "on-secondary-fixed": "#1c1b1b",
+          "surface-container-high": "#ebe8e3", "tertiary-container": "#263325"
         },
         borderRadius: { DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px" },
-        fontFamily: {
-          headline: ["Newsreader"],
-          body: ["Manrope"],
-          label: ["Manrope"]
-        }
+        fontFamily: { headline: ["Newsreader"], body: ["Manrope"], label: ["Manrope"] }
       }
     }
   }
@@ -80,7 +46,6 @@
 </head>
 <body class="text-on-surface selection:bg-primary-container selection:text-white">
 
-<!-- TopNavBar -->
 <nav class="fixed top-0 z-50 w-full bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl">
   <div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
     <a href="index.html" class="text-2xl font-['Newsreader'] font-bold tracking-tighter text-[#1c1c19] dark:text-[#fcf9f4]">
@@ -88,7 +53,7 @@
     </a>
     <div class="hidden md:flex items-center space-x-12">
       <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="advisory.html">ADVISORY</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc] font-bold border-b border-[#3f0001] hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="research.html">RESEARCH</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc] font-bold border-b border-[#3f0001] transition-colors duration-300" href="research.html">RESEARCH</a>
       <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="about.html">ABOUT</a>
     </div>
     <a href="inquiry.html" class="bg-primary text-on-primary px-8 py-3 font-['Manrope'] uppercase tracking-[0.1em] text-[10px] transition-all duration-300 hover:bg-primary-container">
@@ -99,33 +64,31 @@
 
 <main class="pt-32 pb-24">
 
-  <!-- Masthead -->
   <header class="editorial-grid px-12 mb-32">
     <div class="col-start-1 col-span-8">
-      <span class="label-md uppercase tracking-[0.2em] text-primary mb-6 block font-bold text-[10px]">Library &amp; Thought Leadership</span>
+      <span class="label-md uppercase tracking-[0.2em] text-primary mb-6 block font-bold text-[10px]">Research &amp; Thought Leadership</span>
       <h1 class="text-7xl md:text-8xl newsreader-italic tracking-tighter leading-none text-on-surface">
-        The Research <br/>Archive
+        Built on <br/>research.
       </h1>
     </div>
     <div class="col-start-1 col-span-6 mt-12">
       <p class="text-xl text-on-surface/80 leading-relaxed font-light">
-        A curated collection of foundational frameworks, analytical dossiers, and clinical observations on the intersection of human decision-making and artificial intelligence.
+        The Paradox is not built on opinion. The framework emerges from original qualitative research with executives and board members across sectors, interrogating what actually happens to decision quality when AI enters the room.
       </p>
     </div>
   </header>
 
-  <!-- Featured Framework -->
   <section class="mb-40 px-12">
     <div class="editorial-grid bg-surface-container-low p-16 relative overflow-hidden">
       <div class="col-start-1 col-span-5 z-10">
-        <span class="label-md uppercase tracking-[0.2em] text-on-surface/40 mb-8 block text-[10px]">Featured Framework</span>
-        <h2 class="text-5xl newsreader-italic mb-8 text-primary">Decision-Architecture™</h2>
+        <span class="label-md uppercase tracking-[0.2em] text-on-surface/40 mb-8 block text-[10px]">Featured Inquiry</span>
+        <h2 class="text-5xl newsreader-italic mb-8 text-primary">Dual Bounded Rationality</h2>
         <p class="text-lg leading-relaxed mb-10 text-on-surface/70">
-          Our core methodology explores how structural biases in algorithmic processing can be leveraged to enhance—rather than replace—human institutional wisdom. This research identifies the "Synthesis Gap" where most AI implementations fail.
+          Humans and AI each operate under distinct cognitive constraints. Their interaction in decision processes does not cancel these limitations. It compounds them. The research traces cascading dynamics where cognitive offloading to AI progressively degrades the judgment it was meant to support, and identifies the design principles that counter this erosion.
         </p>
-        <button class="border border-primary text-primary px-10 py-4 font-['Manrope'] uppercase tracking-[0.1em] text-[10px] hover:bg-primary hover:text-white transition-all duration-300">
-          View Dossier
-        </button>
+        <p class="text-sm leading-relaxed mb-10 text-on-surface/50 italic">
+          A practitioner-facing working paper is in preparation for publication in 2026.
+        </p>
       </div>
       <div class="col-start-7 col-span-6 h-[500px] relative">
         <img class="w-full h-full object-cover grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2SaBRf-JJyveoAzhA-bjsbkPTDvl4DvPQoZD9NZdsJWUFtKhytAjbv6UeS_gcyv1i4-g-8LHcJ2qmquA15BSlOlkN7q3VnpmR3VMzWy5YEZH4fFIyigyvHJyQ_JK19npj9zJcf1ADUjkdOkDOlHryhozk3GU-D1L9gEfca4fFmahgvydsR8FtSWRTsWQT5Qaaz7vYgRT68exms5StBmL7tnSH2bXBCsCKpucEVVBwblGgxKRAO25iMEzaqZqArX7QBqDtYWLJwxo-"/>
@@ -134,90 +97,71 @@
     </div>
   </section>
 
-  <!-- Intellectual Honesty -->
   <section class="mb-40 px-12 editorial-grid">
     <div class="col-start-1 col-span-12 h-[1px] bg-outline-variant/30 mb-20"></div>
     <div class="col-start-3 col-span-8 text-center mb-24">
       <h3 class="text-4xl newsreader-italic mb-8">Intellectual Honesty</h3>
       <p class="text-2xl font-light leading-snug text-on-surface/60">
-        "We do not seek to validate existing paradigms. We seek the structural anomalies that signify the future. Our commitment is to the raw data of observation, processed without the filter of convenience."
+        "We distinguish between what the evidence shows and what we believe. Where the data supports a claim, we make it clearly. Where it does not, we say so. We publish when we have something to say, not when we need to be seen."
       </p>
-      <div class="mt-8 flex justify-center items-center gap-4">
-        <div class="w-2 h-2 bg-tertiary rounded-full animate-pulse"></div>
-        <span class="label-md uppercase tracking-[0.1em] text-[10px] text-tertiary">Live Evidence Audit Active</span>
-      </div>
     </div>
   </section>
 
-  <!-- Resource Grid -->
   <section class="px-12 mb-40">
     <div class="flex justify-between items-end mb-16 border-b border-outline-variant/20 pb-8">
-      <h3 class="text-3xl newsreader-italic">Primary Resources</h3>
-      <div class="flex gap-12">
-        <button class="label-md uppercase tracking-[0.1em] text-[10px] text-primary border-b border-primary">All Papers</button>
-        <button class="label-md uppercase tracking-[0.1em] text-[10px] text-on-surface/40 hover:text-primary transition-colors">Keynotes</button>
-        <button class="label-md uppercase tracking-[0.1em] text-[10px] text-on-surface/40 hover:text-primary transition-colors">Articles</button>
-      </div>
+      <h3 class="text-3xl newsreader-italic">Forthcoming Publications</h3>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
       <article class="group">
-        <div class="aspect-[4/5] bg-surface-container-high mb-6 overflow-hidden relative">
-          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj2d6K-wM2pQX4075psy_WX5vK7_qclJ2PLVdcKaYn6gZDriZFSRA6bVI0SRlUHocuB4nxErfi0uFtqyd9zUcOZUeo-2v2EhOKBTPG9Q5MRHxAwrUmE9i7xwl_UoclanQ1sEtDrTumosL8Riyo-6jtqbAZSGc7UVGyJ5xSfI0JU1yUC6JLs1HVNfcDzfiREA0CPeBeiVwh7pisBxpZF_IaAaMgny6lwMOTfdoizAZwtdqtZnGRVSql6U65DJZFiG6U2070S8u90Ck6"/>
+        <div class="aspect-[16/10] bg-surface-container-high mb-6 overflow-hidden relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-surface-container-high to-surface-container-highest"></div>
           <div class="absolute top-6 left-6 bg-surface/90 px-4 py-2">
             <span class="label-md uppercase tracking-[0.1em] text-[9px] text-primary">White Paper</span>
           </div>
-        </div>
-        <span class="label-md uppercase tracking-[0.1em] text-[10px] text-on-surface/40 mb-3 block">04.2024 / Decisioning</span>
-        <h4 class="text-2xl font-semibold leading-tight group-hover:text-primary transition-colors cursor-pointer">The Paradox of Choice in Algorithmic Governance</h4>
-        <p class="mt-4 text-on-surface/60 text-sm leading-relaxed">An exploration of how hyper-personalized systems can lead to institutional paralysis.</p>
-      </article>
-      <article class="group">
-        <div class="aspect-[4/5] bg-surface-container-high mb-6 overflow-hidden relative">
-          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcuV09MS3TM9iqr51KGDK6K8r0ZNXgfz1OGMuvmFVHnjot6UjAGruFltnOMuf61c4F0Bkp1thNuB5ACpcbS_sbL78JMW45xeB9teq-OBFL2wDaOTUASBoGOH4qJzAwBfLiMugpyIzCGAL8n8V_lm03cldIBvuZeIlQJy3bXFDGgPfdsv_v31NAlWf1cNudq6ZPTAOD-7YHNTehafH2GXNjXOTE7gjYK69XvibUmBL_6CieTrnOS6BLghW7wfUUK2MAF9U70p7e3WSR"/>
-          <div class="absolute top-6 left-6 bg-surface/90 px-4 py-2">
-            <span class="label-md uppercase tracking-[0.1em] text-[9px] text-primary">Transcript</span>
+          <div class="absolute bottom-6 right-6">
+            <span class="label-md uppercase tracking-[0.1em] text-[9px] text-on-surface/30">In preparation · 2026</span>
           </div>
         </div>
-        <span class="label-md uppercase tracking-[0.1em] text-[10px] text-on-surface/40 mb-3 block">02.2024 / Ethics</span>
-        <h4 class="text-2xl font-semibold leading-tight group-hover:text-primary transition-colors cursor-pointer">Neural Honesty: The Architecture of Bias</h4>
-        <p class="mt-4 text-on-surface/60 text-sm leading-relaxed">Defining the boundaries of transparent machine learning within legacy systems.</p>
+        <span class="label-md uppercase tracking-[0.1em] text-[10px] text-on-surface/40 mb-3 block">Decision architecture</span>
+        <h4 class="text-2xl font-semibold leading-tight">The Paradox of Ungoverned AI</h4>
+        <p class="mt-4 text-on-surface/60 text-sm leading-relaxed">A practitioner-facing argument for why current governance frameworks are insufficient, and what a decision-architecture approach looks like in practice.</p>
       </article>
+
       <article class="group">
-        <div class="aspect-[4/5] bg-surface-container-high mb-6 overflow-hidden relative">
-          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeWvDw0hzVxrZ4KbVGHtx4IQQp_G5-lACqldboqTBBXuWx1J-dmGXXufR-ziLSloCn2SMC5mDE6aF5LjIhCrebbKllGN5x9qduRULL346QMrt4ygEXV9UpoSc02i8OD8DjKw8lZWJLqcknk3HTzx5mSnsw87KoWThZwGKHs2LBFHxw-jyGuVOgsJ4CxegB8a9FfupAo5xPwdQe91F6M7zjUiSysjej-fjfsdKRfxz63iSFOq4bDY4BIROCQJPCldad-08qXJbucZUR"/>
+        <div class="aspect-[16/10] bg-surface-container-high mb-6 overflow-hidden relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-surface-container-highest to-surface-container-low"></div>
           <div class="absolute top-6 left-6 bg-surface/90 px-4 py-2">
-            <span class="label-md uppercase tracking-[0.1em] text-[9px] text-primary">Case Study</span>
+            <span class="label-md uppercase tracking-[0.1em] text-[9px] text-primary">Academic</span>
+          </div>
+          <div class="absolute bottom-6 right-6">
+            <span class="label-md uppercase tracking-[0.1em] text-[9px] text-on-surface/30">Under development · 2026</span>
           </div>
         </div>
-        <span class="label-md uppercase tracking-[0.1em] text-[10px] text-on-surface/40 mb-3 block">12.2023 / Infrastructure</span>
-        <h4 class="text-2xl font-semibold leading-tight group-hover:text-primary transition-colors cursor-pointer">Synthesizing Urban Complexity via AI</h4>
-        <p class="mt-4 text-on-surface/60 text-sm leading-relaxed">How "The Paradox" restructured the transit logic for the Zurich metro expansion.</p>
+        <span class="label-md uppercase tracking-[0.1em] text-[10px] text-on-surface/40 mb-3 block">Human–AI collaboration</span>
+        <h4 class="text-2xl font-semibold leading-tight">A decision architecture for human–AI collaboration under uncertainty</h4>
+        <p class="mt-4 text-on-surface/60 text-sm leading-relaxed">A peer-reviewed contribution positioning dual bounded rationality within the decision-making literature and its implications for governance.</p>
       </article>
+
     </div>
   </section>
 
-  <!-- Newsletter -->
   <section class="px-12 mb-20">
     <div class="editorial-grid bg-tertiary p-20 text-white">
       <div class="col-start-1 col-span-6">
-        <h3 class="text-4xl newsreader-italic mb-6">Receive the Dossier</h3>
-        <p class="text-white/60 mb-12">Our quarterly journal of unpublished findings and strategic observations, delivered to those who require foresight.</p>
+        <h3 class="text-4xl newsreader-italic mb-6">Early-access list</h3>
+        <p class="text-white/60 mb-12">Notification when working papers, keynotes, and the decision-architecture framework become available. No newsletter. No cadence. Only substantive releases.</p>
       </div>
       <div class="col-start-8 col-span-5 flex flex-col justify-center">
-        <div class="relative">
-          <label class="label-md uppercase tracking-[0.1em] text-[10px] text-white/40 mb-4 block">Corporate Email Address</label>
-          <input class="w-full bg-transparent border-b border-white/20 pb-4 text-white focus:outline-none focus:border-white transition-colors placeholder:text-white/10 uppercase tracking-widest text-xs" placeholder="EMAIL@INSTITUTION.ORG" type="email"/>
-          <button class="absolute right-0 bottom-4">
-            <span class="material-symbols-outlined text-white">arrow_forward</span>
-          </button>
-        </div>
+        <a href="inquiry.html" class="inline-block bg-white text-tertiary px-10 py-4 font-['Manrope'] uppercase tracking-[0.2em] text-xs text-center hover:bg-white/90 transition-colors">
+          Request access
+        </a>
       </div>
     </div>
   </section>
 
 </main>
 
-<!-- Footer -->
 <footer class="bg-[#f6f3ee] dark:bg-[#151512] p-20">
   <div class="grid grid-cols-12 gap-8 items-end w-full px-12 mx-auto max-w-[1440px]">
     <div class="col-span-12 md:col-span-4">
@@ -225,17 +169,16 @@
         THE PARADOX
       </div>
       <p class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc]">
-        Curating Clarity in Chaos.
+        THE HAGUE — WORKING GLOBALLY
       </p>
     </div>
     <div class="col-span-12 md:col-span-4 flex flex-col space-y-4">
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-all" href="#">PRIVACY</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-all" href="#">GOVERNANCE</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-all" href="#">TERMS</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-all" href="privacy.html">PRIVACY</a>
+      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-all" href="imprint.html">IMPRESSUM</a>
     </div>
     <div class="col-span-12 md:col-span-4 text-right">
       <p class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40">
-        © 2024 THE PARADOX. ALL RIGHTS RESERVED.
+        © 2026 THE PARADOX. ALL RIGHTS RESERVED.
       </p>
     </div>
   </div>
