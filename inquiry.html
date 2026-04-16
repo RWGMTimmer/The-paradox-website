@@ -85,7 +85,8 @@
 
     <div class="grid grid-cols-12 gap-16">
 
-      <form action="FORMSPREE_ENDPOINT" method="POST" class="col-span-12 lg:col-span-8">
+      <form action="https://formspree.io/f/xjgjywnk" method="POST" class="col-span-12 lg:col-span-8">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
         <div class="border-t border-outline-variant/40 pt-12 mb-12">
           <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-secondary">Section 01 · Identification</span>
         </div>
@@ -138,13 +139,58 @@
         </div>
 
         <div class="border-t border-outline-variant/40 pt-12 flex justify-end">
-          <button class="group bg-primary text-on-primary px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-[12px] hover:bg-primary-container transition-all flex items-center gap-4" type="submit">
-            <span>Send inquiry</span>
+          <button id="submitBtn" class="group bg-primary text-on-primary px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-[12px] hover:bg-primary-container transition-all flex items-center gap-4" type="submit">
+            <span id="submitText">Send inquiry</span>
             <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </button>
         </div>
 
+        <div id="formSuccess" class="hidden border-t border-outline-variant/40 pt-12 mt-12">
+          <div class="bg-surface-container-low p-12">
+            <h3 class="text-3xl font-headline mb-4">Inquiry received.</h3>
+            <p class="text-on-surface-variant leading-relaxed">Thank you. Robert will respond personally. All correspondence is treated as confidential.</p>
+          </div>
+        </div>
+
+        <div id="formError" class="hidden border-t border-outline-variant/40 pt-12 mt-12">
+          <div class="bg-error-container p-12">
+            <h3 class="text-3xl font-headline mb-4 text-on-error-container">Something went wrong.</h3>
+            <p class="text-on-error-container/80 leading-relaxed">Please try again, or email <a href="mailto:info@the-paradox.com" class="underline">info@the-paradox.com</a> directly.</p>
+          </div>
+        </div>
+
       </form>
+
+      <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          var form = this;
+          var btn = document.getElementById('submitBtn');
+          var submitText = document.getElementById('submitText');
+          btn.disabled = true;
+          submitText.textContent = 'Sending…';
+
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          }).then(function(response) {
+            if (response.ok) {
+              form.reset();
+              form.querySelectorAll('.border-t, .grid, .mb-16, #submitBtn').forEach(function(el) { el.style.display = 'none'; });
+              document.getElementById('formSuccess').classList.remove('hidden');
+            } else {
+              document.getElementById('formError').classList.remove('hidden');
+              btn.disabled = false;
+              submitText.textContent = 'Send inquiry';
+            }
+          }).catch(function() {
+            document.getElementById('formError').classList.remove('hidden');
+            btn.disabled = false;
+            submitText.textContent = 'Send inquiry';
+          });
+        });
+      </script>
 
       <aside class="col-span-12 lg:col-span-4 lg:pl-12 lg:border-l border-outline-variant/40">
         <div class="sticky top-32 space-y-12">
