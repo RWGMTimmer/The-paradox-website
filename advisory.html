@@ -109,11 +109,11 @@
 <main class="pt-32">
 
   <section class="relative max-w-[1440px] mx-auto px-6 md:px-12 mb-16 md:mb-32 overflow-hidden">
-    <!-- Decorative background: architectural texture + soft gradient -->
-    <div class="absolute right-0 top-0 w-full md:w-2/3 lg:w-1/2 h-full -z-10 opacity-[0.08] grayscale pointer-events-none">
-      <img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgMzkNh6Np5i4pyIBgeC_rrs-9Wv8IJuiodF5V_PG7lKNumoaSAPhWCBKj4mE7rcT8DocltKzDHdev23u8nHfJzTTRXxZ-8tGhoUCZ_cqKypkcABwHTEorg30ZVwXJPGbs_x4UPz7qqpZ40IPqC27AxFl8Cw3len7ujYF7p-lc6z5uika_rZ3pAN7xqNFv9Hs6T9lNdCoM3toDpTc43Bsw4iuiPOvOEX6icQTxlKijLoDSuD5DyplyNPMSJVSi1WEuSHtrIvJINr-n"/>
-    </div>
-    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_80%_at_85%_15%,_rgba(63,0,1,0.05),_transparent_70%)] pointer-events-none"></div>
+    <!-- Decorative background: gradient + grid texture (no images, no text risk) -->
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_70%_90%_at_85%_15%,_rgba(63,0,1,0.08),_transparent_60%)] pointer-events-none"></div>
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_50%_60%_at_15%_85%,_rgba(220,192,188,0.18),_transparent_60%)] pointer-events-none"></div>
+    <!-- Architectural grid texture -->
+    <div class="absolute right-0 top-0 w-full md:w-2/3 lg:w-1/2 h-full -z-10 opacity-[0.07] pointer-events-none" style="background-image: linear-gradient(to right, #3f0001 1px, transparent 1px), linear-gradient(to bottom, #3f0001 1px, transparent 1px); background-size: 80px 80px;"></div>
     <!-- Large faint typographic mark -->
     <div class="absolute -right-4 md:-right-8 -bottom-12 md:-bottom-20 pointer-events-none select-none -z-10">
       <span class="font-['Newsreader'] italic text-[10rem] md:text-[18rem] lg:text-[24rem] leading-none text-primary/[0.05] tracking-tighter">&para;</span>
@@ -166,8 +166,25 @@
           </div>
         </div>
         <div class="col-span-12 bg-surface p-6 md:p-12 lg:p-16 xl:p-24 grid lg:grid-cols-2 gap-12 items-center">
-          <div class="relative aspect-video w-full overflow-hidden">
-            <img alt="" class="w-full h-full object-cover filter grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD85E9wi_Qdul8isr4xCS4S8D9T-PySmzcUoRHWiXgYB88QIxU_VztEOjNjRnyjwIuaKtFyM_aDmIyO2J1RLixWSRoRYbbGRYGa6tEEFQZDkNfDc8AXqEUUk7ffxegP7WU3ehsoJYCOwsXDCeHEl3nWOcFexuWbb1j1Yqf2W9QtLRxA8D5u2FCZfvptGgFAND8mg7bcudQIT0UWPJ09Mrg0a25rzr4F1agcoxEsfaeAvPPW5XCIwdSfsULD6v1S7fGsIgrXUtnRhsd"/>
+          <!-- CSS architectural composition: grid + concentric framing + icon. No text, no AI-generated images. -->
+          <div class="relative aspect-video w-full overflow-hidden bg-on-surface">
+            <!-- Architectural grid texture -->
+            <div class="absolute inset-0 opacity-[0.18] pointer-events-none" style="background-image: linear-gradient(to right, #fcf9f4 1px, transparent 1px), linear-gradient(to bottom, #fcf9f4 1px, transparent 1px); background-size: 60px 60px;"></div>
+            <!-- Diagonal accent line -->
+            <div class="absolute inset-0 opacity-[0.08] pointer-events-none" style="background-image: linear-gradient(135deg, transparent 49%, #fcf9f4 49%, #fcf9f4 51%, transparent 51%);"></div>
+            <!-- Concentric framing -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[72%] h-[72%] border border-surface/20"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[48%] h-[48%] border border-surface/40"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[24%] h-[24%] border-2 border-primary-fixed-dim"></div>
+            <!-- Central icon -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="material-symbols-outlined text-surface text-6xl md:text-7xl lg:text-8xl relative z-10">schema</span>
+            </div>
+            <!-- Caption -->
+            <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 flex items-end justify-between text-surface/60">
+              <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px]">Decision Architecture</span>
+              <span class="font-['Manrope'] text-[10px]">FIG. 01</span>
+            </div>
           </div>
           <div class="lg:pl-12">
             <h3 class="text-2xl md:text-4xl lg:text-5xl italic mb-6">The governance framework most organisations are missing.</h3>
