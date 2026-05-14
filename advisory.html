@@ -108,8 +108,18 @@
 
 <main class="pt-32">
 
-  <section class="max-w-[1440px] mx-auto px-6 md:px-12 mb-16 md:mb-32">
-    <div class="grid grid-cols-12 gap-8">
+  <section class="relative max-w-[1440px] mx-auto px-6 md:px-12 mb-16 md:mb-32 overflow-hidden">
+    <!-- Decorative background: architectural texture + soft gradient -->
+    <div class="absolute right-0 top-0 w-full md:w-2/3 lg:w-1/2 h-full -z-10 opacity-[0.08] grayscale pointer-events-none">
+      <img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgMzkNh6Np5i4pyIBgeC_rrs-9Wv8IJuiodF5V_PG7lKNumoaSAPhWCBKj4mE7rcT8DocltKzDHdev23u8nHfJzTTRXxZ-8tGhoUCZ_cqKypkcABwHTEorg30ZVwXJPGbs_x4UPz7qqpZ40IPqC27AxFl8Cw3len7ujYF7p-lc6z5uika_rZ3pAN7xqNFv9Hs6T9lNdCoM3toDpTc43Bsw4iuiPOvOEX6icQTxlKijLoDSuD5DyplyNPMSJVSi1WEuSHtrIvJINr-n"/>
+    </div>
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_80%_at_85%_15%,_rgba(63,0,1,0.05),_transparent_70%)] pointer-events-none"></div>
+    <!-- Large faint typographic mark -->
+    <div class="absolute -right-4 md:-right-8 -bottom-12 md:-bottom-20 pointer-events-none select-none -z-10">
+      <span class="font-['Newsreader'] italic text-[10rem] md:text-[18rem] lg:text-[24rem] leading-none text-primary/[0.05] tracking-tighter">&para;</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-8 relative">
       <div class="col-span-12 lg:col-span-8">
         <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary mb-6 block">Strategic Advisory</span>
         <h1 class="text-4xl md:text-6xl lg:text-8xl italic font-light leading-[1.1] tracking-tight mb-12">
@@ -117,7 +127,7 @@
         </h1>
       </div>
       <div class="col-span-12 lg:col-span-4 flex items-end pb-4">
-        <p class="text-lg leading-relaxed text-secondary border-l border-outline-variant pl-8 py-4 italic">
+        <p class="text-lg leading-relaxed text-secondary border-l border-outline-variant pl-8 py-4 italic bg-surface/60 backdrop-blur-sm">
           Structured intellectual advisory, not continuous consulting. We help boards see decision dynamics they cannot currently see, and design governance architecture that accounts for them.
         </p>
       </div>
@@ -250,6 +260,64 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-surface-container-low py-16 md:py-32">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-12 gap-8 mb-20">
+        <div class="col-span-12 lg:col-span-5">
+          <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary mb-6 block">Selected Engagements</span>
+          <h2 class="text-3xl md:text-5xl lg:text-6xl italic leading-tight">Two decades of decisions at the top of organisations.</h2>
+        </div>
+        <div class="col-span-12 lg:col-span-6 lg:col-start-7 flex items-end">
+          <p class="text-lg leading-relaxed text-secondary border-l border-outline-variant pl-8 py-4 italic">
+            The Paradox is a new firm. Its founder is not. Three engagements that illustrate the work — across coalitions, frontier markets, and the Dutch pension sector.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-outline-variant/30">
+
+        <article class="grid grid-cols-12 gap-8 py-16 md:py-20 border-b border-outline-variant/30">
+          <div class="col-span-12 lg:col-span-4">
+            <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-secondary block mb-6">01 / Engagement</span>
+            <p class="font-['Manrope'] uppercase tracking-[0.15em] text-[10px] text-primary font-bold mb-4">TSA BV</p>
+            <h3 class="text-2xl md:text-3xl italic leading-tight">Governance design in complex multi-stakeholder environments</h3>
+          </div>
+          <div class="col-span-12 lg:col-span-7 lg:col-start-6 space-y-4 text-base leading-relaxed text-on-surface-variant">
+            <p>A coalition of organisations facing a shared strategic decision needed an independent party to design and lead the process &mdash; one that could hold competing interests together while maintaining objectivity and procedural integrity.</p>
+            <p>Robert was engaged to establish the governance framework, facilitate alignment across decision-makers, develop the evaluation methodology, and manage the process from inception to board-level recommendation.</p>
+            <p>The result was a structured, defensible process that maintained trust across all stakeholders and produced a decision the boards could own with confidence.</p>
+          </div>
+        </article>
+
+        <article class="grid grid-cols-12 gap-8 py-16 md:py-20 border-b border-outline-variant/30">
+          <div class="col-span-12 lg:col-span-4">
+            <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-secondary block mb-6">02 / Engagement</span>
+            <p class="font-['Manrope'] uppercase tracking-[0.15em] text-[10px] text-primary font-bold mb-4">BluePrint Pension Services &middot; People's Pension Trust &middot; Cardano Development</p>
+            <h3 class="text-2xl md:text-3xl italic leading-tight">Building organisations in frontier markets</h3>
+          </div>
+          <div class="col-span-12 lg:col-span-7 lg:col-start-6 space-y-4 text-base leading-relaxed text-on-surface-variant">
+            <p>Across multiple engagements in Africa and the Asia-Pacific, Robert led the development of financial institutions from concept to operational reality &mdash; including strategy, governance design, technology architecture, and team building.</p>
+            <p>Working in environments with no existing infrastructure, the central challenge was designing organisations that were both commercially viable and structurally sound enough to serve populations previously excluded from the financial system.</p>
+            <p>Several of these initiatives received international recognition, including a <span class="italic text-on-surface">World Pension Summit Innovation Award</span> and inclusion in the <span class="italic text-on-surface">Inclusive Fintech 50</span>.</p>
+          </div>
+        </article>
+
+        <article class="grid grid-cols-12 gap-8 py-16 md:py-20">
+          <div class="col-span-12 lg:col-span-4">
+            <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-secondary block mb-6">03 / Engagement</span>
+            <p class="font-['Manrope'] uppercase tracking-[0.15em] text-[10px] text-primary font-bold mb-4">Mastermind Consulting</p>
+            <h3 class="text-2xl md:text-3xl italic leading-tight">Boardroom advisory in the Dutch pension sector</h3>
+          </div>
+          <div class="col-span-12 lg:col-span-7 lg:col-start-6 space-y-4 text-base leading-relaxed text-on-surface-variant">
+            <p>Over a sustained period, Robert advised pension fund boards on strategy execution, operational excellence, and organisational change. Engagements ranged from governance improvement to major administrative transitions.</p>
+            <p>His role combined strategic counsel at board level with hands-on programme direction &mdash; bridging the gap between boardroom intent and organisational execution.</p>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
