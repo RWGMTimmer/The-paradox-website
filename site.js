@@ -43,4 +43,15 @@
   if (openBtn && menu) openBtn.addEventListener('click', function () { menu.classList.add('open'); });
   if (closeBtn && menu) closeBtn.addEventListener('click', function () { menu.classList.remove('open'); });
   if (menu) menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { menu.classList.remove('open'); }); });
+
+  // Language choice: clicking EN/NL stores an explicit preference so the
+  // first-visit auto-redirect (in each page's <head>) never fights the user.
+  document.querySelectorAll('.lang a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var t = (a.textContent || '').trim().toLowerCase();
+      if (t === 'en' || t === 'nl') {
+        try { localStorage.setItem('pdx-lang', t); sessionStorage.setItem('pdx-redir', '1'); } catch (e) {}
+      }
+    });
+  });
 })();

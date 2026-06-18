@@ -15,6 +15,42 @@ No build step, no Tailwind CDN, no framework. Drop-in replacement for the existi
 | `privacy.html` | `/privacy` | Privacy statement (GDPR) |
 | `imprint.html` | `/imprint` | Imprint (Dutch Civil Code) |
 
+## Bilingual (EN / NL)
+
+The site ships in **English (root)** and **Dutch (`nl/`)**. Every page carries an **EN / NL
+switcher** in the nav (and mobile menu) that links to the same page in the other language.
+
+| Dutch file | URL | EN counterpart |
+|---|---|---|
+| `nl/index.html` | `/nl/` | Home |
+| `nl/advisory.html` | `/nl/advisory` | Advies |
+| `nl/research.html` | `/nl/research` | Onderzoek |
+| `nl/about.html` | `/nl/about` | Over |
+| `nl/inquiry.html` | `/nl/inquiry` | Contact |
+| `nl/privacy.html` | `/nl/privacy` | Privacyverklaring |
+| `nl/imprint.html` | `/nl/imprint` | Colofon |
+
+Dutch pages live in `nl/` and reference the shared `../site.css`, `../site.js`, and the
+root-level images via `../` — so the whole site still deploys as one flat tree. `lang="nl"`
+is set on each. Copy is fully translated in the firm's formal register (the British/European
+spelling of the EN copy maps naturally to Dutch).
+
+### Language auto-detection
+
+Each page carries a tiny inline `<head>` script that runs before paint:
+
+- **First visit, no stored choice** → Dutch-language browsers (`navigator.language` starts
+  with `nl`) are sent to the `/nl/` version; everyone else stays on English. A Dutch browser
+  landing directly on `/nl/` stays put; a non-Dutch browser landing on `/nl/` is sent to EN.
+- **Manual choice wins** → clicking the EN / NL switcher stores `pdx-lang` in `localStorage`;
+  from then on that preference is honoured and auto-detection no longer applies.
+- **No loops / no trap** → a `sessionStorage` guard means the auto-redirect fires at most once
+  per session, and the switcher always lets the visitor override.
+
+> SEO note: this is a client-side redirect. For best crawler behaviour you may later add
+> server-side `hreflang` alternates or a Cloudflare redirect rule, but the JS approach is
+> sufficient for visitors and is non-destructive.
+
 Shared: `site.css` (all styling + tokens + webfont imports), `site.js` (nav condense,
 scroll reveal, dark-mode toggle, mobile menu). Images and favicons sit at the root
 (`robert-timmer.png`, `favicon-*.png`, etc.) — a flat layout matching the original repo,
