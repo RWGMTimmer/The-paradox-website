@@ -16,7 +16,9 @@ No build step, no Tailwind CDN, no framework. Drop-in replacement for the existi
 | `imprint.html` | `/imprint` | Imprint (Dutch Civil Code) |
 
 Shared: `site.css` (all styling + tokens + webfont imports), `site.js` (nav condense,
-scroll reveal, dark-mode toggle, mobile menu), `assets/` (logo, favicons, portrait).
+scroll reveal, dark-mode toggle, mobile menu). Images and favicons sit at the root
+(`robert-timmer.png`, `favicon-*.png`, etc.) — a flat layout matching the original repo,
+so every file deploys to the publish root together.
 
 ## What changed vs. the previous site (visual only — content is unchanged)
 
