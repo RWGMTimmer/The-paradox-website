@@ -17,31 +17,32 @@ No build step, no Tailwind CDN, no framework. Drop-in replacement for the existi
 
 ## Bilingual (EN / NL)
 
-The site ships in **English (root)** and **Dutch (`nl/`)**. Every page carries an **EN / NL
-switcher** in the nav (and mobile menu) that links to the same page in the other language.
+The site ships in **English** and **Dutch**, all as a **single flat folder** — no subfolders,
+so every file can be uploaded individually through the GitHub web UI. Dutch pages use a `-nl`
+suffix. Every page carries an **EN / NL switcher** in the nav (and mobile menu).
 
-| Dutch file | URL | EN counterpart |
+| English | Dutch | Section |
 |---|---|---|
-| `nl/index.html` | `/nl/` | Home |
-| `nl/advisory.html` | `/nl/advisory` | Advies |
-| `nl/research.html` | `/nl/research` | Onderzoek |
-| `nl/about.html` | `/nl/about` | Over |
-| `nl/inquiry.html` | `/nl/inquiry` | Contact |
-| `nl/privacy.html` | `/nl/privacy` | Privacyverklaring |
-| `nl/imprint.html` | `/nl/imprint` | Colofon |
+| `index.html` | `index-nl.html` | Home |
+| `advisory.html` | `advisory-nl.html` | Advies |
+| `research.html` | `research-nl.html` | Onderzoek |
+| `about.html` | `about-nl.html` | Over |
+| `inquiry.html` | `inquiry-nl.html` | Contact |
+| `privacy.html` | `privacy-nl.html` | Privacyverklaring |
+| `imprint.html` | `imprint-nl.html` | Colofon |
 
-Dutch pages live in `nl/` and reference the shared `../site.css`, `../site.js`, and the
-root-level images via `../` — so the whole site still deploys as one flat tree. `lang="nl"`
-is set on each. Copy is fully translated in the firm's formal register (the British/European
-spelling of the EN copy maps naturally to Dutch).
+All pages and images sit at the root and reference `site.css` / `site.js` directly, so the
+whole site is one flat list of files. `lang="nl"` is set on each Dutch page; copy is fully
+translated in the firm's formal register.
 
 ### Language auto-detection
 
 Each page carries a tiny inline `<head>` script that runs before paint:
 
 - **First visit, no stored choice** → Dutch-language browsers (`navigator.language` starts
-  with `nl`) are sent to the `/nl/` version; everyone else stays on English. A Dutch browser
-  landing directly on `/nl/` stays put; a non-Dutch browser landing on `/nl/` is sent to EN.
+  with `nl`) are sent to the matching `*-nl.html` page; everyone else stays on English. A Dutch
+  browser landing directly on a `-nl` page stays put; a non-Dutch browser landing on a `-nl`
+  page is sent to the English equivalent.
 - **Manual choice wins** → clicking the EN / NL switcher stores `pdx-lang` in `localStorage`;
   from then on that preference is honoured and auto-detection no longer applies.
 - **No loops / no trap** → a `sessionStorage` guard means the auto-redirect fires at most once

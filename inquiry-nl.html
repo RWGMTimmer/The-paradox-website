@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact | The Paradox</title>
+<meta name="description" content="Begin het gesprek. Een directe lijn naar The Paradox voor besturen, bestuurders en instituties die een opdracht overwegen."/>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<meta property="og:title" content="Contact | The Paradox"/>
+<meta property="og:image" content="favicon-512.png"/>
+<link rel="stylesheet" href="site.css"/>
+<script>(function(){try{var p=localStorage.getItem('pdx-lang');var nl=(navigator.language||'').toLowerCase().slice(0,2)==='nl';var go=p?p==='en':!nl;if(go&&!sessionStorage.getItem('pdx-redir')){sessionStorage.setItem('pdx-redir','1');var f=(location.pathname.split('/').pop()||'index-nl.html').replace('-nl.html','.html');location.replace(f);}}catch(e){}})();</script>
+</head>
+<body>
+
+<header class="nav"><div class="nav__row">
+  <a class="brand" href="index-nl.html"><span class="mark"><span>P</span></span>THE PARADOX</a>
+  <div class="nav__links">
+    <a class="navlink ulink" href="advisory-nl.html">Advies</a>
+    <a class="navlink ulink" href="research-nl.html">Onderzoek</a>
+    <a class="navlink ulink" href="about-nl.html">Over</a>
+    <a class="btn btn--primary btn--sm" href="inquiry-nl.html">Contact</a>
+    <span class="lang"><a href="inquiry.html">EN</a><span>/</span><a class="on" href="inquiry-nl.html">NL</a></span>
+    <button class="theme-toggle" aria-label="Thema wisselen"><span class="material-symbols-outlined">dark_mode</span></button>
+  </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mobile" id="mobileMenu">
+  <button class="close" id="closeMenu" aria-label="Sluiten">×</button>
+  <a href="advisory-nl.html">Advies</a><a href="research-nl.html">Onderzoek</a><a href="about-nl.html">Over</a>
+  <a class="btn btn--primary" href="inquiry-nl.html">Contact</a>
+  <span class="lang"><a href="inquiry.html">EN</a><span>/</span><a class="on" href="inquiry-nl.html">NL</a></span>
+</div>
+
+<main style="padding-top:120px;">
+
+  <section class="wrap sec" style="padding-top:64px;">
+    <div class="reveal" style="max-width:75%; margin-bottom:96px;">
+      <p class="eyebrow">Directe lijn</p>
+      <h1 class="display" style="font-size:clamp(44px,7vw,116px);">Begin het <span class="it">gesprek</span>.</h1>
+      <p class="lead" style="margin-top:40px; max-width:40rem;">Voor besturen, bestuurders en instituties die een opdracht overwegen. Deel de context; het antwoord is direct, en komt van Robert.</p>
+    </div>
+
+    <div class="grid12" style="gap:64px;">
+      <!-- FORM -->
+      <form id="inquiryForm" class="reveal" style="grid-column:span 8;" action="FORMSPREE_ENDPOINT" method="POST">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
+        <div id="formBody">
+          <div style="border-top:1px solid var(--outline-variant); padding-top:48px; margin-bottom:48px;"><span class="meta" style="text-transform:uppercase; color:var(--secondary);">Sectie 01 · Identificatie</span></div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-bottom:64px;">
+            <label class="field"><span>Volledige naam</span><input type="text" name="fullName" placeholder="Verplicht" required/></label>
+            <label class="field"><span>Titel / functie</span><input type="text" name="title" placeholder="bv. Voorzitter, CEO, Commissaris"/></label>
+            <label class="field"><span>Organisatie</span><input type="text" name="organization" placeholder="Verplicht" required/></label>
+            <label class="field"><span>E-mail</span><input type="email" name="email" placeholder="Verplicht" required/></label>
+          </div>
+
+          <div style="border-top:1px solid var(--outline-variant); padding-top:48px; margin-bottom:48px;"><span class="meta" style="text-transform:uppercase; color:var(--secondary);">Sectie 02 · Aard van de aanvraag</span></div>
+          <div style="margin-bottom:64px;">
+            <span class="flabel">Focus van de opdracht</span>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+              <label class="radio-card"><input type="radio" name="serviceType" value="advisory" checked/><span>Strategisch Advies</span></label>
+              <label class="radio-card"><input type="radio" name="serviceType" value="research"/><span>Onderzoek / Keynote</span></label>
+              <label class="radio-card"><input type="radio" name="serviceType" value="other"/><span>Anders</span></label>
+            </div>
+          </div>
+
+          <div style="margin-bottom:64px;">
+            <label class="field"><span>Context</span><textarea name="inquiry" rows="6" placeholder="Beschrijf kort de besluitcontext, de actuele vraag, of de opdracht die u overweegt." required></textarea></label>
+            <p class="small" style="font-style:italic; margin-top:16px;">Alle correspondentie is vertrouwelijk en wordt behandeld conform de AVG.</p>
+          </div>
+
+          <div style="border-top:1px solid var(--outline-variant); padding-top:48px; display:flex; justify-content:flex-end;">
+            <button type="submit" class="btn btn--primary">Verstuur aanvraag <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></button>
+          </div>
+        </div>
+
+        <div id="formSuccess" style="display:none; border-top:1px solid var(--outline-variant); padding-top:48px;">
+          <div style="background:var(--bg-sunken); padding:64px;">
+            <h3 class="display" style="font-size:30px; margin-bottom:16px;">Aanvraag ontvangen.</h3>
+            <p class="body" style="margin:0;">Dank u. Robert reageert persoonlijk. Alle correspondentie wordt vertrouwelijk behandeld.</p>
+          </div>
+        </div>
+        <div id="formError" style="display:none; border-top:1px solid var(--outline-variant); padding-top:48px;">
+          <div style="background:#ffdad6; padding:64px;">
+            <h3 class="display" style="font-size:30px; margin-bottom:16px; color:#93000a;">Er ging iets mis.</h3>
+            <p style="color:#93000a; margin:0;">Probeer het opnieuw, of mail rechtstreeks naar <a href="mailto:robert.timmer@the-paradox.com" style="text-decoration:underline;">robert.timmer@the-paradox.com</a>.</p>
+          </div>
+        </div>
+      </form>
+
+      <!-- ASIDE -->
+      <aside class="reveal" style="grid-column:span 4; padding-left:48px; border-left:1px solid var(--outline-variant);">
+        <div style="display:flex; flex-direction:column; gap:48px; position:sticky; top:120px;">
+          <div>
+            <p class="meta" style="text-transform:uppercase; margin-bottom:16px;">Over het antwoord</p>
+            <p class="small">Elke aanvraag krijgt een persoonlijk antwoord. Het aantal opdrachten is beperkt om de diepgang van elke opdracht te bewaren. Niet elke aanvraag leidt tot een opdracht, en dat is bewust.</p>
+          </div>
+          <div>
+            <p class="meta" style="text-transform:uppercase; margin-bottom:16px;">Directe correspondentie</p>
+            <a class="small ulink" href="mailto:robert.timmer@the-paradox.com" style="color:var(--ink); text-decoration:none;">robert.timmer@the-paradox.com</a>
+          </div>
+          <div>
+            <p class="meta" style="text-transform:uppercase; margin-bottom:16px;">Locatie</p>
+            <p class="small">Den Haag — wereldwijd actief.</p>
+          </div>
+          <div style="padding-top:48px; border-top:1px solid var(--outline-variant);">
+            <p style="font-family:var(--font-headline); font-style:italic; font-size:18px; line-height:1.4; color:var(--body);">"Wij jagen niet op publiek. Wij bouwen argumenten waar publiek naartoe komt."</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot"><div class="wrap foot__row">
+  <div><div class="wm">THE PARADOX</div><div class="meta" style="text-transform:uppercase;">Den Haag — Wereldwijd actief</div></div>
+  <div style="display:flex; gap:32px;"><a class="navlink ulink" href="privacy-nl.html">Privacy</a><a class="navlink ulink" href="imprint-nl.html">Colofon</a></div>
+  <div class="meta" style="color:var(--body);">© 2026 The Paradox</div>
+</div></footer>
+
+<script src="site.js"></script>
+<script>
+(function(){
+  var form = document.getElementById('inquiryForm');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (form.action.indexOf('FORMSPREE_ENDPOINT') !== -1) {
+      document.getElementById('formBody').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+      return;
+    }
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Versturen…';
+    fetch(form.action, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} })
+      .then(function(r){
+        if(r.ok){ document.getElementById('formBody').style.display='none'; document.getElementById('formSuccess').style.display='block'; }
+        else { document.getElementById('formError').style.display='block'; btn.disabled=false; btn.textContent='Verstuur aanvraag'; }
+      }).catch(function(){ document.getElementById('formError').style.display='block'; btn.disabled=false; btn.textContent='Verstuur aanvraag'; });
+  });
+})();
+</script>
+</body>
+</html>
