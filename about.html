@@ -1,236 +1,102 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>About | The Paradox</title>
 <meta name="description" content="The Paradox is led by Robert Timmer, an independent boardroom advisor specialising in strategy, organisational development, and human–AI collaborative decision-making."/>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "inverse-primary": "#ffb4a9", "secondary": "#5f5e5e", "surface-container-lowest": "#ffffff",
-          "on-tertiary-container": "#8d9b8a", "on-primary": "#ffffff", "surface-variant": "#e5e2dd",
-          "inverse-surface": "#31302d", "tertiary": "#121e12", "surface-dim": "#dcdad5",
-          "secondary-container": "#e2dfde", "outline-variant": "#dcc0bc", "on-error": "#ffffff",
-          "tertiary-fixed": "#d8e7d3", "on-primary-container": "#e87667", "primary-fixed-dim": "#ffb4a9",
-          "on-error-container": "#93000a", "primary-fixed": "#ffdad5", "surface-container-highest": "#e5e2dd",
-          "outline": "#89726e", "on-secondary-container": "#636262", "surface": "#fcf9f4",
-          "on-primary-fixed": "#410001", "tertiary-fixed-dim": "#bccbb7", "surface-bright": "#fcf9f4",
-          "surface-tint": "#a03f34", "primary-container": "#60100b", "primary": "#3f0001",
-          "surface-container": "#f0ede8", "on-surface": "#1c1c19", "on-primary-fixed-variant": "#802820",
-          "on-background": "#1c1c19", "secondary-fixed": "#e5e2e1", "secondary-fixed-dim": "#c8c6c5",
-          "on-secondary": "#ffffff", "on-surface-variant": "#56423f", "on-tertiary": "#ffffff",
-          "error": "#ba1a1a", "on-secondary-fixed-variant": "#474746", "surface-container-low": "#f6f3ee",
-          "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#3d4a3c", "inverse-on-surface": "#f3f0eb",
-          "on-tertiary-fixed": "#121e12", "background": "#fcf9f4", "on-secondary-fixed": "#1c1b1b",
-          "surface-container-high": "#ebe8e3", "tertiary-container": "#263325"
-        },
-        borderRadius: { DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px" },
-        fontFamily: { headline: ["Newsreader", "serif"], body: ["Manrope", "sans-serif"], label: ["Manrope", "sans-serif"] }
-      }
-    }
-  }
-</script>
-<style>
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
-  body { font-family: 'Manrope', sans-serif; }
-  h1, h2, h3 { font-family: 'Newsreader', serif; }
-  .text-justify-custom { text-align: justify; text-justify: inter-word; }
-</style>
-
-  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-  <meta property="og:title" content="About | The Paradox"/>
-  <meta property="og:description" content="The Paradox is led by Robert Timmer, an independent boardroom advisor specialising in strategy, organisational development, and human–AI collaborative decision-making."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://the-paradox.com/about.html"/>
-  <meta property="og:image" content="https://the-paradox.com/favicon-512.png"/>
-  <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="About | The Paradox"/>
-  <meta name="twitter:description" content="The Paradox is led by Robert Timmer, an independent boardroom advisor specialising in strategy, organisational development, and human–AI collaborative decision-making."/>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/>
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+<meta property="og:title" content="About | The Paradox"/>
+<meta property="og:image" content="assets/favicon-512.png"/>
+<link rel="stylesheet" href="site.css"/>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<body>
 
-<nav class="bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl fixed top-0 z-50 w-full">
-  <div class="flex justify-between items-center w-full px-6 md:px-12 py-6 max-w-[1440px] mx-auto">
-    <a href="index.html" class="text-2xl font-['Newsreader'] font-bold tracking-tighter text-[#1c1c19] dark:text-[#fcf9f4]">
-      THE PARADOX
-    </a>
-    <div class="hidden md:flex items-center gap-12">
-      <a class="text-[10px] font-['Manrope'] uppercase tracking-[0.1em] text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="advisory.html">ADVISORY</a>
-      <a class="text-[10px] font-['Manrope'] uppercase tracking-[0.1em] text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="research.html">RESEARCH</a>
-      <a class="text-[10px] font-['Manrope'] uppercase tracking-[0.1em] text-[#3f0001] dark:text-[#dcc0bc] font-bold border-b border-[#3f0001] transition-colors duration-300" href="about.html">ABOUT</a>
-      <a href="inquiry.html" class="bg-primary text-on-primary px-8 py-2.5 text-[10px] tracking-[0.2em] font-bold transition-all duration-300 hover:bg-primary-container">
-        INQUIRY
-      </a>
-    </div>
+<header class="nav"><div class="nav__row">
+  <a class="brand" href="index.html"><span class="mark"><span>P</span></span>THE PARADOX</a>
+  <div class="nav__links">
+    <a class="navlink ulink" href="advisory.html">Advisory</a>
+    <a class="navlink ulink" href="research.html">Research</a>
+    <a class="navlink active" href="about.html">About</a>
+    <a class="btn btn--primary btn--sm" href="inquiry.html">Inquiry</a>
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="material-symbols-outlined">dark_mode</span></button>
   </div>
-
-    <!-- Mobile hamburger -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5" aria-label="Menu">
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
-      <span class="block w-4 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] ml-0"></span>
-    </button>
-  </nav>
-<!-- Mobile menu overlay -->
-<div id="mobileMenu" class="fixed inset-0 z-[60] bg-[#fcf9f4] dark:bg-[#1c1c19]" style="display:none;">
-  <div class="flex flex-col justify-center items-center h-full">
-    <button id="closeMenu" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center" aria-label="Close menu">
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] rotate-45 absolute"></span>
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] -rotate-45 absolute"></span>
-    </button>
-    <nav class="flex flex-col items-center gap-10">
-      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="advisory.html">Advisory</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="research.html">Research</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="about.html">About</a>
-      <a class="mt-6 bg-[#3f0001] text-white px-8 py-3 font-['Manrope'] uppercase tracking-[0.2em] text-xs" href="inquiry.html">Inquiry</a>
-    </nav>
-  </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mobile" id="mobileMenu">
+  <button class="close" id="closeMenu" aria-label="Close">×</button>
+  <a href="advisory.html">Advisory</a><a href="research.html">Research</a><a href="about.html">About</a>
+  <a class="btn btn--primary" href="inquiry.html">Inquiry</a>
 </div>
-<script>
-(function(){
-  var b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu'),c=document.getElementById('closeMenu');
-  if(!b||!m||!c)return;
-  b.onclick=function(){m.style.display='flex';};
-  c.onclick=function(){m.style.display='none';};
-  m.querySelectorAll('a').forEach(function(a){a.onclick=function(){m.style.display='none';};});
-})();
-</script>
 
+<main style="padding-top:120px;">
 
-<main class="pt-32">
-
-  <section class="max-w-[1440px] mx-auto px-6 md:px-12 pb-24 border-none">
-    <div class="grid grid-cols-12 gap-8">
-      <div class="col-span-12 md:col-span-8">
-        <p class="font-label uppercase tracking-[0.2em] text-[10px] text-primary mb-6">The Firm</p>
-        <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-headline italic tracking-tight leading-[0.9] mb-12">
-          Decisions, designed <br/>with <span class="text-primary-container">intent</span>.
-        </h1>
+  <!-- HERO -->
+  <section class="wrap sec" style="padding-top:64px;">
+    <div class="grid12">
+      <div class="reveal" style="grid-column:span 8;">
+        <p class="eyebrow">The Firm</p>
+        <h1 class="display" style="font-style:italic; font-size:clamp(44px,7vw,116px);">Decisions, designed with <span style="color:var(--primary-container);">intent</span>.</h1>
       </div>
-      <div class="col-span-12 md:col-span-4 flex items-end">
-        <p class="text-lg text-on-surface-variant leading-relaxed italic mb-4">
-          "The goal isn't to move faster than the machine, but to decide better than the noise."
-        </p>
+      <div class="reveal" style="grid-column:span 4; display:flex; align-items:flex-end;">
+        <p style="font-family:var(--font-headline); font-style:italic; font-size:18px; line-height:1.6; color:var(--body);">"The goal isn't to move faster than the machine, but to decide better than the noise."</p>
       </div>
     </div>
   </section>
 
-  <section class="bg-surface-container-low py-16 md:py-32">
-    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
-      <div class="grid grid-cols-12 gap-8 md:gap-16 items-start">
-        <div class="col-span-12 md:col-span-5 relative aspect-[4/5] bg-surface-container-highest overflow-hidden">
-          <img alt="Portrait of Robert Timmer" class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700" src="robert-timmer.png"/>
-          <div class="absolute bottom-0 right-0 p-8 bg-surface-container-lowest/90 backdrop-blur-md">
-            <span class="font-label uppercase tracking-[0.1em] text-[10px]">Robert Timmer · Founder</span>
-          </div>
+  <!-- FOUNDER -->
+  <section class="sec" style="background:var(--bg-sunken);">
+    <div class="wrap grid12" style="gap:64px; align-items:start;">
+      <div class="reveal duotone" style="grid-column:span 5; aspect-ratio:4/5; position:relative;">
+        <img src="assets/robert-timmer.png" alt="Robert Timmer"/>
+        <div style="position:absolute; bottom:0; right:0; padding:24px 32px; background:color-mix(in srgb, var(--surface) 90%, transparent); backdrop-filter:blur(8px); z-index:4;">
+          <span class="meta" style="text-transform:uppercase; color:var(--on-surface);">Robert Timmer · Founder</span>
         </div>
-        <div class="col-span-12 md:col-span-7">
-          <h2 class="text-2xl md:text-4xl lg:text-5xl font-headline mb-8">The Founder</h2>
-          <div class="space-y-6 text-on-surface-variant text-justify-custom leading-relaxed max-w-2xl">
-            <p>
-              Robert Timmer is an independent boardroom advisor specialising in strategy, organisational development, and human–AI collaborative decision-making.
-            </p>
-            <p>
-              With over two decades of experience building and leading organisations across the Netherlands, Europe, Africa, and Asia-Pacific, Robert brings a rare combination of strategic depth and operational reality to boardroom conversations. His work focuses on the quality of decisions at the top of organisations &mdash; how they are structured, challenged, and made.
-            </p>
-            <p>
-              Through <span class="font-headline italic text-on-surface">The Paradox</span>, Robert works with boards and leadership teams navigating complex strategic choices, organisational transitions, and the governance challenges that come with increasing AI involvement in decision processes.
-            </p>
-            <p>
-              He is completing an EMBA at Nyenrode Business University, with his thesis research focused on human–AI collaborative decision-making in governance contexts.
-            </p>
-            <div class="pt-8 grid grid-cols-2 gap-8 border-t border-outline-variant/30">
-              <div>
-                <span class="block text-2xl font-headline text-primary">20+</span>
-                <span class="font-label uppercase tracking-[0.1em] text-[9px]">Years of practice</span>
-              </div>
-              <div>
-                <span class="block text-2xl font-headline text-primary">4</span>
-                <span class="font-label uppercase tracking-[0.1em] text-[9px]">Continents worked</span>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="reveal" style="grid-column:6 / span 7;">
+        <h2 class="display" style="font-size:clamp(30px,4vw,56px); margin-bottom:32px;">The Founder</h2>
+        <div style="display:flex; flex-direction:column; gap:20px; max-width:42rem;">
+          <p class="body">Robert Timmer is an independent boardroom advisor specialising in strategy, organisational development, and human–AI collaborative decision-making.</p>
+          <p class="body">With over two decades of experience building and leading organisations across the Netherlands, Europe, Africa, and Asia-Pacific, Robert brings a rare combination of strategic depth and operational reality to boardroom conversations.</p>
+          <p class="body">Through <span class="it">The Paradox</span>, he works with boards and leadership teams navigating complex strategic choices, organisational transitions, and the governance challenges that come with increasing AI involvement in decision processes.</p>
+          <p class="body">He is completing an EMBA at Nyenrode Business University, with his thesis research focused on human–AI collaborative decision-making in governance contexts.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; border-top:1px solid var(--line); padding-top:32px; margin-top:48px; max-width:32rem;">
+          <div><span class="display" style="display:block; font-size:44px; color:var(--primary);">20+</span><span class="meta" style="text-transform:uppercase; color:var(--ink);">Years of practice</span></div>
+          <div><span class="display" style="display:block; font-size:44px; color:var(--primary);">4</span><span class="meta" style="text-transform:uppercase; color:var(--ink);">Continents worked</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-32 bg-surface">
-    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
-      <div class="max-w-4xl mx-auto text-center mb-24">
-        <span class="font-label uppercase tracking-[0.2em] text-[10px] text-secondary mb-4 block">What we stand for</span>
-        <h3 class="text-3xl md:text-5xl lg:text-6xl font-headline italic mb-8">Operating constraints, not aspirations.</h3>
-        <p class="text-xl font-body text-on-surface-variant leading-relaxed">
-          These are not positioning statements. They are the conditions under which the work is done.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/20">
-        <div class="p-12 bg-surface-container-lowest hover:bg-primary transition-colors duration-500 group">
-          <div class="flex items-center gap-2 mb-8">
-            <span class="w-2 h-2 bg-tertiary rounded-full group-hover:bg-on-primary"></span>
-            <span class="font-label uppercase tracking-[0.1em] text-[10px] group-hover:text-on-primary/60">01</span>
-          </div>
-          <h4 class="text-3xl font-headline mb-4 group-hover:text-on-primary">Intellectual honesty over comfort</h4>
-          <p class="text-sm leading-relaxed text-on-surface-variant group-hover:text-on-primary/80">
-            We distinguish between what the evidence shows and what we believe. Where the data supports a claim, we make it clearly. Where it does not, we say so.
-          </p>
-        </div>
-        <div class="p-12 bg-surface-container-low hover:bg-primary transition-colors duration-500 group">
-          <div class="flex items-center gap-2 mb-8">
-            <span class="w-2 h-2 bg-tertiary rounded-full group-hover:bg-on-primary"></span>
-            <span class="font-label uppercase tracking-[0.1em] text-[10px] group-hover:text-on-primary/60">02</span>
-          </div>
-          <h4 class="text-3xl font-headline mb-4 group-hover:text-on-primary">Substance before visibility</h4>
-          <p class="text-sm leading-relaxed text-on-surface-variant group-hover:text-on-primary/80">
-            We publish when we have something to say, not when we need to be seen. Every keynote, paper, and engagement is grounded in research that earns its claim.
-          </p>
-        </div>
-        <div class="p-12 bg-surface-container-highest hover:bg-primary transition-colors duration-500 group">
-          <div class="flex items-center gap-2 mb-8">
-            <span class="w-2 h-2 bg-tertiary rounded-full group-hover:bg-on-primary"></span>
-            <span class="font-label uppercase tracking-[0.1em] text-[10px] group-hover:text-on-primary/60">03</span>
-          </div>
-          <h4 class="text-3xl font-headline mb-4 group-hover:text-on-primary">Independence as a design principle</h4>
-          <p class="text-sm leading-relaxed text-on-surface-variant group-hover:text-on-primary/80">
-            We are not on call. We are thinkers that boards access on structured, scoped terms. Independence protects the quality of the work and the integrity of the advice.
-          </p>
-        </div>
-      </div>
+  <!-- OPERATING CONSTRAINTS -->
+  <section class="wrap sec">
+    <div class="reveal" style="max-width:56rem; margin:0 auto 80px; text-align:center;">
+      <p class="meta" style="text-transform:uppercase; color:var(--body); margin-bottom:16px;">What we stand for</p>
+      <h3 class="display" style="font-style:italic; font-size:clamp(30px,4vw,56px); margin-bottom:32px;">Operating constraints, not aspirations.</h3>
+      <p class="lead">These are not positioning statements. They are the conditions under which the work is done.</p>
+    </div>
+    <div class="reveal bgrid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="cell"><p class="meta" style="margin-bottom:24px;"><span class="dot"></span>01</p><h4 class="display" style="font-size:28px; margin-bottom:16px;">Intellectual honesty over comfort</h4><p class="small">We distinguish between what the evidence shows and what we believe. Where the data supports a claim, we make it clearly. Where it does not, we say so.</p></div>
+      <div class="cell"><p class="meta" style="margin-bottom:24px;"><span class="dot"></span>02</p><h4 class="display" style="font-size:28px; margin-bottom:16px;">Substance before visibility</h4><p class="small">We publish when we have something to say, not when we need to be seen. Every keynote, paper, and engagement is grounded in research that earns its claim.</p></div>
+      <div class="cell"><p class="meta" style="margin-bottom:24px;"><span class="dot"></span>03</p><h4 class="display" style="font-size:28px; margin-bottom:16px;">Independence as a design principle</h4><p class="small">We are not on call. We are thinkers that boards access on structured, scoped terms. Independence protects the quality of the work and the integrity of the advice.</p></div>
     </div>
   </section>
 
-  <section class="py-40 bg-on-surface text-surface relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-      <img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgMzkNh6Np5i4pyIBgeC_rrs-9Wv8IJuiodF5V_PG7lKNumoaSAPhWCBKj4mE7rcT8DocltKzDHdev23u8nHfJzTTRXxZ-8tGhoUCZ_cqKypkcABwHTEorg30ZVwXJPGbs_x4UPz7qqpZ40IPqC27AxFl8Cw3len7ujYF7p-lc6z5uika_rZ3pAN7xqNFv9Hs6T9lNdCoM3toDpTc43Bsw4iuiPOvOEX6icQTxlKijLoDSuD5DyplyNPMSJVSi1WEuSHtrIvJINr-n"/>
-    </div>
-    <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
-      <div class="grid grid-cols-12 gap-8">
-        <div class="col-span-12 md:col-span-8">
-          <span class="font-label uppercase tracking-[0.3em] text-[10px] text-outline-variant mb-8 block">Vision</span>
-          <h2 class="text-4xl md:text-6xl lg:text-8xl font-headline italic leading-[1] mb-12">
-            Decision quality as a designed <span class="text-inverse-primary">capability</span>.
-          </h2>
-        </div>
-        <div class="col-span-12 md:col-span-4 flex flex-col justify-between">
-          <div class="p-8 border-l border-outline-variant/20">
-            <p class="text-lg font-body leading-relaxed opacity-80 mb-8">
-              A world where every consequential decision — in boardrooms, institutions, systems that shape lives — is made with awareness of both human and artificial limitations.
-            </p>
-            <div class="flex items-center gap-4">
-              <span class="material-symbols-outlined text-4xl">arrow_forward</span>
-              <a class="font-label uppercase tracking-[0.2em] text-[10px] hover:text-inverse-primary transition-colors" href="inquiry.html">Begin the inquiry</a>
-            </div>
-          </div>
+  <!-- VISION (dark band) -->
+  <section class="sec grain" style="background:var(--on-surface); color:var(--surface); position:relative; overflow:hidden;">
+    <div class="gridtex" style="position:absolute; inset:0; opacity:0.08;"></div>
+    <div class="wrap grid12 reveal" style="position:relative;">
+      <div style="grid-column:span 8;">
+        <p class="meta" style="color:var(--inverse-primary); text-transform:uppercase; margin-bottom:32px;">Vision</p>
+        <h2 class="display" style="font-style:italic; font-size:clamp(40px,6vw,92px); color:var(--surface);">Decision quality as a designed <span style="color:var(--inverse-primary);">capability</span>.</h2>
+      </div>
+      <div style="grid-column:span 4; display:flex; flex-direction:column; justify-content:flex-end;">
+        <div style="padding-left:32px; border-left:1px solid rgba(220,192,188,0.2);">
+          <p style="font-size:18px; line-height:1.65; color:rgba(252,249,244,0.8); margin:0 0 32px;">A world where every consequential decision — in boardrooms, institutions, systems that shape lives — is made with awareness of both human and artificial limitations.</p>
+          <a class="btn btn--light" href="inquiry.html">Begin the inquiry <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span></a>
         </div>
       </div>
     </div>
@@ -238,25 +104,12 @@
 
 </main>
 
-<footer class="bg-[#f6f3ee] dark:bg-[#151512] py-20">
-  <div class="grid grid-cols-12 gap-8 items-end w-full px-6 md:px-12 max-w-[1440px] mx-auto">
-    <div class="col-span-12 md:col-span-4">
-      <div class="text-lg font-['Newsreader'] text-[#1c1c19] dark:text-[#fcf9f4] mb-8">THE PARADOX</div>
-      <p class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc]">
-        THE HAGUE — WORKING GLOBALLY
-      </p>
-    </div>
-    <div class="col-span-12 md:col-span-8 flex justify-end gap-12">
-      <a class="text-[10px] font-['Manrope'] uppercase tracking-[0.1em] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors" href="privacy.html">PRIVACY</a>
-      <a class="text-[10px] font-['Manrope'] uppercase tracking-[0.1em] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors" href="imprint.html">IMPRESSUM</a>
-    </div>
-  </div>
-  <div class="px-12 max-w-[1440px] mx-auto mt-12">
-    <div class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 text-right">
-      © 2026 THE PARADOX. ALL RIGHTS RESERVED.
-    </div>
-  </div>
-</footer>
+<footer class="foot"><div class="wrap foot__row">
+  <div><div class="wm">THE PARADOX</div><div class="meta" style="text-transform:uppercase;">The Hague — Working Globally</div></div>
+  <div style="display:flex; gap:32px;"><a class="navlink ulink" href="privacy.html">Privacy</a><a class="navlink ulink" href="imprint.html">Impressum</a></div>
+  <div class="meta" style="color:var(--body);">© 2026 The Paradox</div>
+</div></footer>
 
+<script src="site.js"></script>
 </body>
 </html>

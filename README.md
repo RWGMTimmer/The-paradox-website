@@ -1,47 +1,56 @@
-# The Paradox — Website
+# The Paradox — Website (Visual v2)
 
-Static website for The Paradox. Pure HTML + Tailwind (via CDN). No build step.
+Restyled static website for The Paradox. Pure HTML + one CSS file + one JS file.
+No build step, no Tailwind CDN, no framework. Drop-in replacement for the existing repo.
 
 ## Pages
 
 | File | URL | Purpose |
 |---|---|---|
-| `index.html` | `/` | Homepage / Advisory hub |
+| `index.html` | `/` | Homepage / advisory hub |
 | `advisory.html` | `/advisory` | Strategic Advisory detail |
 | `research.html` | `/research` | Research archive |
 | `about.html` | `/about` | About / Robert Timmer |
 | `inquiry.html` | `/inquiry` | Contact form |
+| `privacy.html` | `/privacy` | Privacy statement (GDPR) |
+| `imprint.html` | `/imprint` | Imprint (Dutch Civil Code) |
 
-## Deployment
+Shared: `site.css` (all styling + tokens + webfont imports), `site.js` (nav condense,
+scroll reveal, dark-mode toggle, mobile menu), `assets/` (logo, favicons, portrait).
 
-Deployed via **Cloudflare Pages**, connected to this GitHub repository. Every push to `main` auto-deploys.
+## What changed vs. the previous site (visual only — content is unchanged)
 
-### Initial setup
-1. Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git
-2. Select this repository
-3. Build settings:
-   - Framework preset: **None**
-   - Build command: *(leave empty)*
-   - Build output directory: `/`
-4. Deploy
+- **Imagery** — signature oxblood **duotone** treatment with film **grain** (replaces the
+  expired Google-CDN placeholder images; the founder portrait is the one real photo).
+- **Type** — added **IBM Plex Mono** for metadata / eyebrows / figure tags; Newsreader display
+  now uses optical sizing and tighter tracking.
+- **Colour rhythm** — deliberate paper → low-tint → dark → paper cadence; forest-green band as a
+  rare second dark accent (Research early-access, About vision).
+- **Dark mode** — a finished, persistent theme (toggle in the nav), replacing the half-built
+  `dark:` classes.
+- **Motion** — scroll-reveal, nav condenses on scroll, link underlines draw, image hovers.
+  Fully respects `prefers-reduced-motion` and degrades gracefully with JS disabled.
+- **No Tailwind CDN** — ~13 KB of hand-written CSS instead of ~300 KB on every page load.
+- **Accessibility** — lifted low-opacity text, larger hit areas, the GDPR note on the form.
 
-### Custom domain
-Cloudflare Pages → project → Custom domains → add `the-paradox.com` and `www.the-paradox.com`.
+## Deploy (Cloudflare Pages — your existing flow)
+
+The site auto-deploys from the GitHub repo on every push to `main`:
+
+1. Replace the old files in `RWGMTimmer/The-paradox-website` with the contents of this `site/`
+   folder (keep `_headers`, `wrangler.jsonc`, `robots`, etc. — only the HTML/CSS/JS/assets change).
+2. Commit and push to `main`.
+3. Cloudflare Pages rebuilds and deploys automatically (Framework preset: None, build command:
+   empty, output dir: `/`).
+
+> Note: this environment cannot push to your GitHub repo or Cloudflare account directly —
+> deploy is the one step that must run from your side. Everything needed is in this folder.
 
 ## Before going fully live — TODO
 
-- [ ] **Formspree endpoint** — replace `FORMSPREE_ENDPOINT` in `inquiry.html` with the actual form URL from formspree.io (signed up under info@the-paradox.com)
-- [ ] **Email hosting** — ensure `info@the-paradox.com` actually receives mail (GoDaddy email or Google Workspace)
-- [ ] **Images** — current placeholder images are hosted on Google's CDN and may expire. Replace with own assets in `/img` directory
-- [ ] **Tailwind via CDN** — fine for prototype, but for production consider compiling Tailwind to a static CSS file (~10KB instead of ~300KB on every page load)
-- [ ] **Privacy / Governance / Terms** pages — currently linked but don't exist
-- [ ] **Analytics** — Cloudflare Web Analytics is free, privacy-friendly, no cookie banner needed
-
-## Local preview
-
-Just open any `.html` file in a browser, or run a simple server:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
+- [ ] **Formspree endpoint** — in `inquiry.html`, replace `FORMSPREE_ENDPOINT` in the form's
+  `action` with the real Formspree URL. (Until then the form shows the success state without
+  sending.)
+- [ ] **Imprint** — fill in the VAT/BTW number in `imprint.html` (the operating entity now reads "A Timmer Strategisch Advies BV initiative").
+- [ ] **Share card** — `og:image` currently points at the favicon; add a 1200×630 share image.
+- [ ] Optional: self-host the three Google fonts for full offline/independence.

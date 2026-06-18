@@ -1,299 +1,145 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Inquiry | The Paradox</title>
 <meta name="description" content="Begin the inquiry. A direct line to The Paradox for boards, executives, and institutions considering engagement."/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "inverse-primary": "#ffb4a9", "secondary": "#5f5e5e", "surface-container-lowest": "#ffffff",
-          "on-tertiary-container": "#8d9b8a", "on-primary": "#ffffff", "surface-variant": "#e5e2dd",
-          "inverse-surface": "#31302d", "tertiary": "#121e12", "surface-dim": "#dcdad5",
-          "secondary-container": "#e2dfde", "outline-variant": "#dcc0bc", "on-error": "#ffffff",
-          "tertiary-fixed": "#d8e7d3", "on-primary-container": "#e87667", "primary-fixed-dim": "#ffb4a9",
-          "on-error-container": "#93000a", "primary-fixed": "#ffdad5", "surface-container-highest": "#e5e2dd",
-          "outline": "#89726e", "on-secondary-container": "#636262", "surface": "#fcf9f4",
-          "on-primary-fixed": "#410001", "tertiary-fixed-dim": "#bccbb7", "surface-bright": "#fcf9f4",
-          "surface-tint": "#a03f34", "primary-container": "#60100b", "primary": "#3f0001",
-          "surface-container": "#f0ede8", "on-surface": "#1c1c19", "on-primary-fixed-variant": "#802820",
-          "on-background": "#1c1c19", "secondary-fixed": "#e5e2e1", "secondary-fixed-dim": "#c8c6c5",
-          "on-secondary": "#ffffff", "on-surface-variant": "#56423f", "on-tertiary": "#ffffff",
-          "error": "#ba1a1a", "on-secondary-fixed-variant": "#474746", "surface-container-low": "#f6f3ee",
-          "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#3d4a3c", "inverse-on-surface": "#f3f0eb",
-          "on-tertiary-fixed": "#121e12", "background": "#fcf9f4", "on-secondary-fixed": "#1c1b1b",
-          "surface-container-high": "#ebe8e3", "tertiary-container": "#263325"
-        },
-        borderRadius: { DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px" },
-        fontFamily: { headline: ["Newsreader"], body: ["Manrope"], label: ["Manrope"] }
-      }
-    }
-  }
-</script>
-<style>
-  body { font-family: 'Manrope', sans-serif; background-color: #fcf9f4; color: #1c1c19; }
-  h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
-  input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-bottom-color: #3f0001;
-  }
-  .form-field { border-bottom: 1px solid #dcc0bc; background: transparent; transition: border-color 0.3s ease; }
-</style>
-
-  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-  <meta property="og:title" content="Inquiry | The Paradox"/>
-  <meta property="og:description" content="Begin the inquiry. A direct line to The Paradox for boards, executives, and institutions considering engagement."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://the-paradox.com/inquiry.html"/>
-  <meta property="og:image" content="https://the-paradox.com/favicon-512.png"/>
-  <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="Inquiry | The Paradox"/>
-  <meta name="twitter:description" content="Begin the inquiry. A direct line to The Paradox for boards, executives, and institutions considering engagement."/>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/>
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+<meta property="og:title" content="Inquiry | The Paradox"/>
+<meta property="og:image" content="assets/favicon-512.png"/>
+<link rel="stylesheet" href="site.css"/>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<body>
 
-<nav class="bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl fixed top-0 left-0 right-0 z-50 border-b border-outline-variant/20">
-  <div class="flex justify-between items-center w-full px-6 md:px-12 py-6 max-w-[1440px] mx-auto">
-    <a href="index.html" class="text-2xl font-['Newsreader'] font-bold tracking-tighter text-[#1c1c19] dark:text-[#fcf9f4]">
-      THE PARADOX
-    </a>
-    <div class="hidden md:flex items-center gap-12">
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="advisory.html">ADVISORY</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="research.html">RESEARCH</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors duration-300" href="about.html">ABOUT</a>
-    </div>
-    <a href="inquiry.html" class="bg-primary text-on-primary px-6 py-2 text-[10px] tracking-[0.2em] font-['Manrope'] uppercase transition-all duration-300">
-      INQUIRY
-    </a>
+<header class="nav"><div class="nav__row">
+  <a class="brand" href="index.html"><span class="mark"><span>P</span></span>THE PARADOX</a>
+  <div class="nav__links">
+    <a class="navlink ulink" href="advisory.html">Advisory</a>
+    <a class="navlink ulink" href="research.html">Research</a>
+    <a class="navlink ulink" href="about.html">About</a>
+    <a class="btn btn--primary btn--sm" href="inquiry.html">Inquiry</a>
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="material-symbols-outlined">dark_mode</span></button>
   </div>
-
-    <!-- Mobile hamburger -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5" aria-label="Menu">
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4]"></span>
-      <span class="block w-4 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] ml-0"></span>
-    </button>
-  </nav>
-<!-- Mobile menu overlay -->
-<div id="mobileMenu" class="fixed inset-0 z-[60] bg-[#fcf9f4] dark:bg-[#1c1c19]" style="display:none;">
-  <div class="flex flex-col justify-center items-center h-full">
-    <button id="closeMenu" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center" aria-label="Close menu">
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] rotate-45 absolute"></span>
-      <span class="block w-6 h-[1.5px] bg-[#1c1c19] dark:bg-[#fcf9f4] -rotate-45 absolute"></span>
-    </button>
-    <nav class="flex flex-col items-center gap-10">
-      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="advisory.html">Advisory</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="research.html">Research</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.2em] text-sm text-[#1c1c19] dark:text-[#fcf9f4] hover:text-[#3f0001] transition-colors" href="about.html">About</a>
-      <a class="mt-6 bg-[#3f0001] text-white px-8 py-3 font-['Manrope'] uppercase tracking-[0.2em] text-xs" href="inquiry.html">Inquiry</a>
-    </nav>
-  </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mobile" id="mobileMenu">
+  <button class="close" id="closeMenu" aria-label="Close">×</button>
+  <a href="advisory.html">Advisory</a><a href="research.html">Research</a><a href="about.html">About</a>
+  <a class="btn btn--primary" href="inquiry.html">Inquiry</a>
 </div>
-<script>
-(function(){
-  var b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu'),c=document.getElementById('closeMenu');
-  if(!b||!m||!c)return;
-  b.onclick=function(){m.style.display='flex';};
-  c.onclick=function(){m.style.display='none';};
-  m.querySelectorAll('a').forEach(function(a){a.onclick=function(){m.style.display='none';};});
-})();
-</script>
 
+<main style="padding-top:120px;">
 
-<main class="pt-32">
-
-  <section class="max-w-[1440px] mx-auto px-6 md:px-12 py-24">
-    <div class="grid grid-cols-12 gap-8 mb-24">
-      <div class="col-span-12 lg:col-span-9">
-        <span class="font-['Manrope'] uppercase tracking-[0.3em] text-[10px] text-primary mb-8 block">Direct Line</span>
-        <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-headline leading-[0.95] tracking-tighter mb-12">
-          Begin the <span class="italic text-primary">inquiry</span>.
-        </h1>
-        <div class="max-w-2xl">
-          <p class="text-xl leading-relaxed text-on-surface-variant">
-            For boards, executives, and institutions considering engagement. Share the context; the response will be direct, and will come from Robert.
-          </p>
-        </div>
-      </div>
+  <section class="wrap sec" style="padding-top:64px;">
+    <div class="reveal" style="max-width:75%; margin-bottom:96px;">
+      <p class="eyebrow">Direct Line</p>
+      <h1 class="display" style="font-size:clamp(44px,7vw,116px);">Begin the <span class="it">inquiry</span>.</h1>
+      <p class="lead" style="margin-top:40px; max-width:40rem;">For boards, executives, and institutions considering engagement. Share the context; the response will be direct, and will come from Robert.</p>
     </div>
 
-    <div class="grid grid-cols-12 gap-8 md:gap-16">
-
-      <form action="https://formspree.io/f/xjgjywnk" method="POST" class="col-span-12 lg:col-span-8">
+    <div class="grid12" style="gap:64px;">
+      <!-- FORM -->
+      <form id="inquiryForm" class="reveal" style="grid-column:span 8;" action="FORMSPREE_ENDPOINT" method="POST">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
-        <div class="border-t border-outline-variant/40 pt-12 mb-12">
-          <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-secondary">Section 01 · Identification</span>
-        </div>
+        <div id="formBody">
+          <div style="border-top:1px solid var(--outline-variant); padding-top:48px; margin-bottom:48px;"><span class="meta" style="text-transform:uppercase; color:var(--secondary);">Section 01 · Identification</span></div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-bottom:64px;">
+            <label class="field"><span>Full Name</span><input type="text" name="fullName" placeholder="Required" required/></label>
+            <label class="field"><span>Title / Role</span><input type="text" name="title" placeholder="e.g. Chair, CEO, Board Member"/></label>
+            <label class="field"><span>Organisation</span><input type="text" name="organization" placeholder="Required" required/></label>
+            <label class="field"><span>Email</span><input type="email" name="email" placeholder="Required" required/></label>
+          </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          <div class="relative">
-            <label class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-on-surface/60 block mb-4" for="fullName">Full Name</label>
-            <input class="w-full form-field py-3 text-lg text-on-surface placeholder:text-on-surface/30" id="fullName" name="fullName" placeholder="Required" required type="text"/>
+          <div style="border-top:1px solid var(--outline-variant); padding-top:48px; margin-bottom:48px;"><span class="meta" style="text-transform:uppercase; color:var(--secondary);">Section 02 · Nature of Inquiry</span></div>
+          <div style="margin-bottom:64px;">
+            <span class="flabel">Focus of Engagement</span>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+              <label class="radio-card"><input type="radio" name="serviceType" value="advisory" checked/><span>Strategic Advisory</span></label>
+              <label class="radio-card"><input type="radio" name="serviceType" value="research"/><span>Research / Keynote</span></label>
+              <label class="radio-card"><input type="radio" name="serviceType" value="other"/><span>Other</span></label>
+            </div>
           </div>
-          <div class="relative">
-            <label class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-on-surface/60 block mb-4" for="title">Title / Role</label>
-            <input class="w-full form-field py-3 text-lg text-on-surface placeholder:text-on-surface/30" id="title" name="title" placeholder="e.g. Chair, CEO, Board Member" type="text"/>
-          </div>
-          <div class="relative">
-            <label class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-on-surface/60 block mb-4" for="organization">Organisation</label>
-            <input class="w-full form-field py-3 text-lg text-on-surface placeholder:text-on-surface/30" id="organization" name="organization" placeholder="Required" required type="text"/>
-          </div>
-          <div class="relative">
-            <label class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-on-surface/60 block mb-4" for="email">Email</label>
-            <input class="w-full form-field py-3 text-lg text-on-surface placeholder:text-on-surface/30" id="email" name="email" placeholder="Required" required type="email"/>
-          </div>
-        </div>
 
-        <div class="border-t border-outline-variant/40 pt-12 mb-12">
-          <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-secondary">Section 02 · Nature of Inquiry</span>
-        </div>
+          <div style="margin-bottom:64px;">
+            <label class="field"><span>Context</span><textarea name="inquiry" rows="6" placeholder="Briefly describe the decision context, the current question, or the engagement you are considering." required></textarea></label>
+            <p class="small" style="font-style:italic; margin-top:16px;">All correspondence is confidential and handled in accordance with GDPR.</p>
+          </div>
 
-        <div class="mb-16">
-          <label class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-on-surface/60 block mb-8" for="serviceType">Focus of Engagement</label>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <label class="flex items-center gap-3 border border-outline-variant/40 p-6 hover:border-primary transition-colors cursor-pointer">
-              <input class="w-4 h-4 text-primary border-outline-variant focus:ring-primary" name="serviceType" type="radio" value="advisory"/>
-              <span class="font-['Manrope'] uppercase tracking-[0.1em] text-[11px] font-semibold">Strategic Advisory</span>
-            </label>
-            <label class="flex items-center gap-3 border border-outline-variant/40 p-6 hover:border-primary transition-colors cursor-pointer">
-              <input class="w-4 h-4 text-primary border-outline-variant focus:ring-primary" name="serviceType" type="radio" value="research"/>
-              <span class="font-['Manrope'] uppercase tracking-[0.1em] text-[11px] font-semibold">Research / Keynote</span>
-            </label>
-            <label class="flex items-center gap-3 border border-outline-variant/40 p-6 hover:border-primary transition-colors cursor-pointer">
-              <input class="w-4 h-4 text-primary border-outline-variant focus:ring-primary" name="serviceType" type="radio" value="other"/>
-              <span class="font-['Manrope'] uppercase tracking-[0.1em] text-[11px] font-semibold">Other</span>
-            </label>
+          <div style="border-top:1px solid var(--outline-variant); padding-top:48px; display:flex; justify-content:flex-end;">
+            <button type="submit" class="btn btn--primary">Send inquiry <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></button>
           </div>
         </div>
 
-        <div class="mb-16">
-          <label class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-on-surface/60 block mb-4" for="inquiry">Context</label>
-          <textarea class="w-full form-field py-3 text-lg text-on-surface placeholder:text-on-surface/30" id="inquiry" name="inquiry" placeholder="Briefly describe the decision context, the current question, or the engagement you are considering." required rows="6"></textarea>
-          <p class="text-[11px] text-on-surface/40 mt-4 italic">All correspondence is confidential.</p>
-        </div>
-
-        <div class="border-t border-outline-variant/40 pt-12 flex justify-end">
-          <button id="submitBtn" class="group bg-primary text-on-primary px-6 md:px-12 py-5 font-['Manrope'] uppercase tracking-[0.2em] text-[12px] hover:bg-primary-container transition-all flex items-center gap-4" type="submit">
-            <span id="submitText">Send inquiry</span>
-            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </button>
-        </div>
-
-        <div id="formSuccess" class="hidden border-t border-outline-variant/40 pt-12 mt-12">
-          <div class="bg-surface-container-low p-6 md:p-12">
-            <h3 class="text-3xl font-headline mb-4">Inquiry received.</h3>
-            <p class="text-on-surface-variant leading-relaxed">Thank you. Robert will respond personally. All correspondence is treated as confidential.</p>
+        <div id="formSuccess" style="display:none; border-top:1px solid var(--outline-variant); padding-top:48px;">
+          <div style="background:var(--bg-sunken); padding:64px;">
+            <h3 class="display" style="font-size:30px; margin-bottom:16px;">Inquiry received.</h3>
+            <p class="body" style="margin:0;">Thank you. Robert will respond personally. All correspondence is treated as confidential.</p>
           </div>
         </div>
-
-        <div id="formError" class="hidden border-t border-outline-variant/40 pt-12 mt-12">
-          <div class="bg-error-container p-6 md:p-12">
-            <h3 class="text-3xl font-headline mb-4 text-on-error-container">Something went wrong.</h3>
-            <p class="text-on-error-container/80 leading-relaxed">Please try again, or email <a href="mailto:robert.timmer@the-paradox.com" class="underline">robert.timmer@the-paradox.com</a> directly.</p>
+        <div id="formError" style="display:none; border-top:1px solid var(--outline-variant); padding-top:48px;">
+          <div style="background:#ffdad6; padding:64px;">
+            <h3 class="display" style="font-size:30px; margin-bottom:16px; color:#93000a;">Something went wrong.</h3>
+            <p style="color:#93000a; margin:0;">Please try again, or email <a href="mailto:robert.timmer@the-paradox.com" style="text-decoration:underline;">robert.timmer@the-paradox.com</a> directly.</p>
           </div>
         </div>
-
       </form>
 
-      <script>
-        document.querySelector('form').addEventListener('submit', function(e) {
-          e.preventDefault();
-          var form = this;
-          var btn = document.getElementById('submitBtn');
-          var submitText = document.getElementById('submitText');
-          btn.disabled = true;
-          submitText.textContent = 'Sending…';
-
-          fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-          }).then(function(response) {
-            if (response.ok) {
-              form.reset();
-              form.querySelectorAll('.border-t, .grid, .mb-16, #submitBtn').forEach(function(el) { el.style.display = 'none'; });
-              document.getElementById('formSuccess').classList.remove('hidden');
-            } else {
-              document.getElementById('formError').classList.remove('hidden');
-              btn.disabled = false;
-              submitText.textContent = 'Send inquiry';
-            }
-          }).catch(function() {
-            document.getElementById('formError').classList.remove('hidden');
-            btn.disabled = false;
-            submitText.textContent = 'Send inquiry';
-          });
-        });
-      </script>
-
-      <aside class="col-span-12 lg:col-span-4 lg:pl-12 lg:border-l border-outline-variant/40">
-        <div class="sticky top-32 space-y-12">
-
+      <!-- ASIDE -->
+      <aside class="reveal" style="grid-column:span 4; padding-left:48px; border-left:1px solid var(--outline-variant);">
+        <div style="display:flex; flex-direction:column; gap:48px; position:sticky; top:120px;">
           <div>
-            <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary block mb-4">On response</span>
-            <p class="text-sm leading-relaxed text-on-surface-variant">
-              Every inquiry receives a personal response. Engagements are limited in number to preserve the depth of each. Not every inquiry leads to engagement, and that is intentional.
-            </p>
+            <p class="meta" style="text-transform:uppercase; margin-bottom:16px;">On response</p>
+            <p class="small">Every inquiry receives a personal response. Engagements are limited in number to preserve the depth of each. Not every inquiry leads to engagement, and that is intentional.</p>
           </div>
-
           <div>
-            <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary block mb-4">Direct correspondence</span>
-            <a href="mailto:robert.timmer@the-paradox.com" class="text-sm leading-relaxed text-on-surface hover:text-primary transition-colors underline-offset-4 hover:underline">
-              robert.timmer@the-paradox.com
-            </a>
+            <p class="meta" style="text-transform:uppercase; margin-bottom:16px;">Direct correspondence</p>
+            <a class="small ulink" href="mailto:robert.timmer@the-paradox.com" style="color:var(--ink); text-decoration:none;">robert.timmer@the-paradox.com</a>
           </div>
-
           <div>
-            <span class="font-['Manrope'] uppercase tracking-[0.2em] text-[10px] text-primary block mb-4">Location</span>
-            <p class="text-sm leading-relaxed text-on-surface-variant">
-              The Hague — working globally.
-            </p>
+            <p class="meta" style="text-transform:uppercase; margin-bottom:16px;">Location</p>
+            <p class="small">The Hague — working globally.</p>
           </div>
-
-          <div class="pt-12 border-t border-outline-variant/40">
-            <blockquote class="font-headline italic text-lg text-on-surface/60 leading-relaxed">
-              "We do not chase audiences. We build arguments that audiences come to."
-            </blockquote>
+          <div style="padding-top:48px; border-top:1px solid var(--outline-variant);">
+            <p style="font-family:var(--font-headline); font-style:italic; font-size:18px; line-height:1.4; color:var(--body);">"We do not chase audiences. We build arguments that audiences come to."</p>
           </div>
-
         </div>
       </aside>
-
     </div>
   </section>
 
 </main>
 
-<footer class="bg-[#f6f3ee] dark:bg-[#151512] py-20 border-t border-outline-variant/10">
-  <div class="grid grid-cols-12 gap-8 items-end w-full px-6 md:px-12 max-w-[1440px] mx-auto">
-    <div class="col-span-12 lg:col-span-4">
-      <div class="text-lg font-['Newsreader'] text-[#1c1c19] dark:text-[#fcf9f4] mb-4">THE PARADOX</div>
-      <div class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#3f0001] dark:text-[#dcc0bc]">
-        THE HAGUE — WORKING GLOBALLY
-      </div>
-    </div>
-    <div class="col-span-12 md:col-span-6 lg:col-span-4 flex gap-8">
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors" href="privacy.html">PRIVACY</a>
-      <a class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40 hover:text-[#3f0001] dark:hover:text-[#dcc0bc] transition-colors" href="imprint.html">IMPRESSUM</a>
-    </div>
-    <div class="col-span-12 md:col-span-6 lg:col-span-4 text-right">
-      <div class="font-['Manrope'] uppercase tracking-[0.1em] text-[10px] text-[#1c1c19]/40">
-        © 2026 THE PARADOX. ALL RIGHTS RESERVED.
-      </div>
-    </div>
-  </div>
-</footer>
+<footer class="foot"><div class="wrap foot__row">
+  <div><div class="wm">THE PARADOX</div><div class="meta" style="text-transform:uppercase;">The Hague — Working Globally</div></div>
+  <div style="display:flex; gap:32px;"><a class="navlink ulink" href="privacy.html">Privacy</a><a class="navlink ulink" href="imprint.html">Impressum</a></div>
+  <div class="meta" style="color:var(--body);">© 2026 The Paradox</div>
+</div></footer>
 
+<script src="site.js"></script>
+<script>
+(function(){
+  var form = document.getElementById('inquiryForm');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    // Replace FORMSPREE_ENDPOINT with the real endpoint before going live.
+    if (form.action.indexOf('FORMSPREE_ENDPOINT') !== -1) {
+      document.getElementById('formBody').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+      return;
+    }
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    fetch(form.action, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} })
+      .then(function(r){
+        if(r.ok){ document.getElementById('formBody').style.display='none'; document.getElementById('formSuccess').style.display='block'; }
+        else { document.getElementById('formError').style.display='block'; btn.disabled=false; btn.textContent='Send inquiry'; }
+      }).catch(function(){ document.getElementById('formError').style.display='block'; btn.disabled=false; btn.textContent='Send inquiry'; });
+  });
+})();
+</script>
 </body>
 </html>
