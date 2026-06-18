@@ -214,11 +214,45 @@ a.mode:hover .modebody { color: color-mix(in srgb, var(--on-primary) 82%, transp
 @media (max-width: 1024px) {
   .nav__links { display: none; }
   .menu-btn { display: flex; }
-  .grid12 { grid-template-columns: 1fr; }
-  .modegrid { grid-template-columns: 1fr; }
+
+  /* Collapse the 12-col grid and drop any explicit column placement on its
+     children (e.g. "grid-column: 6 / span 7"), which would otherwise spawn
+     empty implicit columns and break the single-column stack. */
+  .grid12 { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .grid12 > * { grid-column: auto !important; }
+
+  .modegrid { grid-template-columns: 1fr !important; }
+
+  /* Any section laid out as a side-by-side grid → stack */
   section[style*="grid-template-columns"] { display: block !important; min-height: 0 !important; }
   section[style*="grid-template-columns"] > * { margin-bottom: 40px; }
+
+  /* Any inline-styled grid (framework cells, stat pairs, form fields,
+     radio cards, forthcoming-pubs, governance footer) → single column */
+  [style*="grid-template-columns: repeat"],
+  [style*="grid-template-columns:repeat"],
+  [style*="grid-template-columns: 1fr 1fr"],
+  [style*="grid-template-columns:1fr 1fr"],
   .bgrid[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+
+  /* Keep tight 2-up pairs (stats, the two framework cells) as 2 columns down
+     to phone width — they read fine and look intentional. */
+  .twocol-keep { grid-template-columns: 1fr 1fr !important; }
+
+  /* The blueprint panel derives its width from min-height × aspect-ratio,
+     which can exceed the container — pin it to the available width. */
+  [style*="aspect-ratio:16/9"] { width: 100% !important; }
+
   .sec { padding: 80px 0; }
   :root { --gutter-lg: 24px; }
+}
+
+@media (max-width: 600px) {
+  /* Final phone collapse: even the kept 2-ups and the engagement-model
+     two-column rows go single, and the blueprint title block shrinks. */
+  .twocol-keep,
+  [style*="grid-template-columns:208px 1fr"],
+  [style*="grid-template-columns: 208px 1fr"] { grid-template-columns: 1fr !important; }
+  .display { letter-spacing: -0.02em; }
+  .legal-list dd { word-break: break-word; }
 }
