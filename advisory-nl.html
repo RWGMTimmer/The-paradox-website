@@ -57,9 +57,161 @@
         <h2 class="display" style="font-style:italic; font-size:clamp(30px,3.6vw,40px);">Besluitarchitectuur</h2>
         <p class="meta" style="margin-top:14px; text-transform:uppercase;">Een op onderzoek gefundeerd raamwerk</p>
       </div>
-      <div class="reveal" style="margin-bottom:1px; border:1px solid var(--line); background:#faf8f3; overflow:hidden; position:relative;">
-        <img src="decision-architecture.png" alt="Het besluitarchitectuur-raamwerk van The Paradox — principes, categorieën, niveaus, enablers en de besluitstroom" style="width:100%; display:block; filter:grayscale(1) contrast(1.03);"/>
-        <span class="meta" style="position:absolute; left:20px; bottom:16px; text-transform:uppercase; font-size:11px; background:color-mix(in srgb, #faf8f3 82%, transparent); padding:5px 10px;">FIG. 03 · Het volledige raamwerk</span>
+      <div class="reveal" style="border:1px solid var(--line); background:var(--bg); margin-bottom:1px;">
+        <div style="padding:40px 32px 32px; border-bottom:1px solid var(--line); position:relative; overflow:hidden;">
+          <span class="watermark" style="right:2%; top:-46%; font-size:clamp(150px,18vw,260px);">¶</span>
+          <span class="meta" style="text-transform:uppercase; position:relative;">FIG. 03 · Het volledige raamwerk</span>
+          <h3 class="display" style="font-style:italic; font-size:clamp(26px,3vw,40px); margin-top:12px; position:relative;">AI-Besluitarchitectuur</h3>
+          <p class="small" style="margin-top:10px; max-width:64ch; position:relative;">Een gestructureerd raamwerk voor betrouwbare, effectieve en schaalbare AI-besluitvorming — van <em>waaróm</em> we beslissen, via <em>hóe</em>, tot hoe we <em>leren</em>.</p>
+        </div>
+        <div style="overflow-x:auto;">
+          <div style="min-width:900px; display:grid; gap:1px; background:var(--line);">
+
+            <!-- 01 WAAROM · Bedrijfsuitkomsten -->
+            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
+              <div style="background:var(--bg-sunken); padding:26px;">
+                <span class="meta">01 / Waarom</span>
+                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Bedrijfsuitkomsten</h4>
+                <p class="small" style="font-size:13px;">Wat willen we bereiken?</p>
+              </div>
+              <div style="background:var(--line); display:grid; grid-template-columns:repeat(6,1fr); gap:1px;">
+                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">trending_up</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Omzetgroei</div></div>
+                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">sentiment_satisfied</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Klantervaring</div></div>
+                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">settings</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Operationele efficiëntie</div></div>
+                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">shield</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Risicobeheer</div></div>
+                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">lightbulb</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Innovatie</div></div>
+                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">verified</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Compliance</div></div>
+              </div>
+            </div>
+
+            <!-- 02 WAT · Besluitgebieden -->
+            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
+              <div style="background:var(--bg-sunken); padding:26px;">
+                <span class="meta">02 / Wat</span>
+                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Besluitgebieden</h4>
+                <p class="small" style="font-size:13px;">Bij welke beslissingen moet AI ons helpen?</p>
+              </div>
+              <div style="background:var(--line); display:grid; grid-template-columns:repeat(7,1fr); gap:1px;">
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">campaign</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Marketing</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Targeting, content, budget</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">sell</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Sales</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Leadscoring, next best action</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">inventory_2</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Operatie</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Forecasting, voorraad, routing</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">account_balance</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Financiën</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Anomalie, krediet, prognose</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">group</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Mensen</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Talent, verloop, planning</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">gavel</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Risico &amp; compliance</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Fraude, monitoring, signalen</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">category</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Product</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Aanbevelingen, A/B, roadmap</p></div>
+              </div>
+            </div>
+
+            <!-- 03 HOE · AI-besluitstroom -->
+            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
+              <div style="background:var(--bg-sunken); padding:26px;">
+                <span class="meta">03 / Hoe</span>
+                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">AI-besluitstroom</h4>
+                <p class="small" style="font-size:13px;">Hoe nemen we AI-beslissingen?</p>
+              </div>
+              <div style="background:var(--line); display:grid; grid-template-columns:repeat(8,1fr); gap:1px;">
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">01</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Definiëren</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Doelen &amp; succescriteria</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">02</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Data</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Verzamelen, prepareren, valideren</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">03</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Model</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Selecteren, trainen, valideren</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">04</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Evalueren</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Nauwkeurigheid, eerlijkheid, bias</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">05</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Beslissen</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Voorspelling of aanbeveling</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">06</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Uitleggen</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Onderbouwing of uitleg</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">07</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Handelen</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Uitvoeren, human-in-the-loop</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">08</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Monitoren</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Prestatie, drift, feedback</p></div>
+              </div>
+            </div>
+
+            <!-- 04 WIE · Beslisrechten & toezicht -->
+            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
+              <div style="background:var(--bg-sunken); padding:26px;">
+                <span class="meta">04 / Wie</span>
+                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Beslisrechten &amp; toezicht</h4>
+                <p class="small" style="font-size:13px;">Wie beslist, en met welke bevoegdheid?</p>
+              </div>
+              <div style="background:var(--line); display:grid; grid-template-columns:repeat(5,1fr); gap:1px;">
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">smart_toy</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">AI adviseert</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Mens beoordeelt &amp; beslist</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">person</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Mens beslist</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Met of zonder AI-input</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">groups</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Gedeeld besluit</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">AI + mens werken samen</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">memory</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">AI voert uit</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Binnen guardrails, onder toezicht</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">neurology</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Autonome AI</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Beslist &amp; handelt zelfstandig</p></div>
+              </div>
+            </div>
+
+            <!-- Guardrails -->
+            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
+              <div style="background:var(--bg-sunken); padding:20px 26px;"><span class="meta">Overal van toepassing</span><div style="font-family:var(--font-headline); font-style:italic; font-size:18px; margin-top:6px;">Guardrails</div></div>
+              <div style="background:var(--bg); padding:18px 16px; display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">description</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Beleid &amp; standaarden</span></span>
+                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">shield</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Risico &amp; compliance</span></span>
+                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">balance</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Ethiek &amp; eerlijkheid</span></span>
+                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">lock</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Privacy &amp; beveiliging</span></span>
+                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">pan_tool</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Menselijke override</span></span>
+              </div>
+            </div>
+
+            <!-- 05 ENABLERS -->
+            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
+              <div style="background:var(--bg-sunken); padding:26px;">
+                <span class="meta">05 / Enablers</span>
+                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Wat het ondersteunt</h4>
+                <p class="small" style="font-size:13px;">Wat ondersteunt onze AI-besluitvorming?</p>
+              </div>
+              <div style="background:var(--line); display:grid; grid-template-columns:repeat(6,1fr); gap:1px;">
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">database</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Datafundament</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Kwaliteit, governance, toegang</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">construction</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Platform &amp; tools</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">MLOps, API's, feature store</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">hub</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Model &amp; techniek</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">LLM's, algoritmen, graphs</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">diversity_3</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Mensen &amp; vaardigheden</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Geletterdheid, data science</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">account_tree</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Processen</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Levenscyclus, change management</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">favorite</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Cultuur</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Vertrouwen, transparantie</p></div>
+              </div>
+            </div>
+
+            <!-- 06 FEEDBACK -->
+            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
+              <div style="background:var(--bg-sunken); padding:26px;">
+                <span class="meta">06 / Feedback</span>
+                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Leercyclus</h4>
+                <p class="small" style="font-size:13px;">Hoe leren en verbeteren we?</p>
+              </div>
+              <div style="background:var(--line); display:grid; grid-template-columns:repeat(5,1fr); gap:1px;">
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">01</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Meten</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">KPI's &amp; impact</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">02</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Analyseren</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Problemen, bias, oorzaken</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">03</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Verbeteren</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Hertrainen, verfijnen, bijwerken</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">04</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Uitrollen</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Veilig bijwerken (CI/CD)</p></div>
+                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">05</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Leren</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Inzicht vastleggen &amp; delen</p></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Governance footer -->
+        <div style="border-top:1px solid var(--line); padding:32px; display:grid; grid-template-columns:repeat(4,1fr); gap:32px;">
+          <div>
+            <span class="meta" style="text-transform:uppercase;">Principes</span>
+            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
+              <li class="small" style="font-size:13px;">Mensgericht</li><li class="small" style="font-size:13px;">Eerlijk &amp; onbevooroordeeld</li><li class="small" style="font-size:13px;">Transparant &amp; uitlegbaar</li><li class="small" style="font-size:13px;">Veilig &amp; privé</li><li class="small" style="font-size:13px;">Betrouwbaar &amp; veilig</li><li class="small" style="font-size:13px;">Verantwoording</li>
+            </ul>
+          </div>
+          <div>
+            <span class="meta" style="text-transform:uppercase;">Belangrijkste controls</span>
+            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
+              <li class="small" style="font-size:13px;">Modelrisicobeheer</li><li class="small" style="font-size:13px;">Datagovernance</li><li class="small" style="font-size:13px;">Bias- &amp; eerlijkheidstests</li><li class="small" style="font-size:13px;">Uitlegbaarheid</li><li class="small" style="font-size:13px;">Monitoring &amp; alerting</li><li class="small" style="font-size:13px;">Audit-logging</li>
+            </ul>
+          </div>
+          <div>
+            <span class="meta" style="text-transform:uppercase;">Rollen</span>
+            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
+              <li class="small" style="font-size:13px;">Business owner</li><li class="small" style="font-size:13px;">Data owner</li><li class="small" style="font-size:13px;">Model owner</li><li class="small" style="font-size:13px;">AI / ML-engineer</li><li class="small" style="font-size:13px;">Risico &amp; compliance</li><li class="small" style="font-size:13px;">Eindgebruikers</li>
+            </ul>
+          </div>
+          <div>
+            <span class="meta" style="text-transform:uppercase;">Documentatie</span>
+            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
+              <li class="small" style="font-size:13px;">Model cards</li><li class="small" style="font-size:13px;">Datasheets</li><li class="small" style="font-size:13px;">Beslislogs</li><li class="small" style="font-size:13px;">Wijzigingshistorie</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="reveal bgrid bsunken" style="grid-template-columns:1fr 1fr;">
         <div class="cell">
