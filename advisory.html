@@ -57,160 +57,67 @@
         <h2 class="display" style="font-style:italic; font-size:clamp(30px,3.6vw,40px);">Decision Architecture</h2>
         <p class="meta" style="margin-top:14px; text-transform:uppercase;">A research-grounded framework</p>
       </div>
-      <div class="reveal" style="border:1px solid var(--line); background:var(--bg); margin-bottom:1px;">
-        <div style="padding:40px 32px 32px; border-bottom:1px solid var(--line); position:relative; overflow:hidden;">
-          <span class="watermark" style="right:2%; top:-46%; font-size:clamp(150px,18vw,260px);">¶</span>
-          <span class="meta" style="text-transform:uppercase; position:relative;">FIG. 03 · The framework, in full</span>
-          <h3 class="display" style="font-style:italic; font-size:clamp(26px,3vw,40px); margin-top:12px; position:relative;">AI Decision Architecture</h3>
-          <p class="small" style="margin-top:10px; max-width:64ch; position:relative;">A structured framework for trusted, effective and scalable AI-powered decisions — from <em>why</em> we decide, through <em>how</em>, to how we <em>learn</em>.</p>
-        </div>
-        <div style="overflow-x:auto;">
-          <div style="min-width:900px; display:grid; gap:1px; background:var(--line);">
-
-            <!-- 01 WHY · Business outcomes -->
-            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
-              <div style="background:var(--bg-sunken); padding:26px;">
-                <span class="meta">01 / Why</span>
-                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Business outcomes</h4>
-                <p class="small" style="font-size:13px;">What are we trying to achieve?</p>
-              </div>
-              <div style="background:var(--line); display:grid; grid-template-columns:repeat(6,1fr); gap:1px;">
-                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">trending_up</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Revenue growth</div></div>
-                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">sentiment_satisfied</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Customer experience</div></div>
-                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">settings</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Operational efficiency</div></div>
-                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">shield</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Risk management</div></div>
-                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">lightbulb</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Innovation</div></div>
-                <div style="background:var(--bg); padding:18px;"><span class="material-symbols-outlined" style="font-size:24px; color:var(--primary);">verified</span><div style="font-family:var(--font-body); font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; margin-top:10px;">Compliance</div></div>
-              </div>
+      <div class="reveal" style="position:relative; overflow:hidden; border:1px solid var(--line); background:linear-gradient(150deg,#3f0001 0%, #2a0a08 48%, #161613 100%); min-height:520px; aspect-ratio:16/9; margin-bottom:1px; color:var(--surface);">
+        <div class="grain" style="position:absolute; inset:0;"></div>
+        <!-- blueprint grid -->
+        <div style="position:absolute; inset:0; opacity:0.5; background-image:linear-gradient(to right, rgba(252,249,244,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(252,249,244,0.06) 1px, transparent 1px); background-size:32px 32px;"></div>
+        <div style="position:absolute; inset:0; opacity:0.6; background-image:linear-gradient(to right, rgba(252,249,244,0.09) 1px, transparent 1px), linear-gradient(to bottom, rgba(252,249,244,0.09) 1px, transparent 1px); background-size:160px 160px;"></div>
+        <span class="watermark" style="left:-5%; bottom:-24%; font-size:clamp(220px,30vw,480px); color:rgba(252,249,244,0.045);">¶</span>
+        <!-- corner registration marks -->
+        <div style="position:absolute; left:18px; top:18px; width:18px; height:18px; border-left:1px solid rgba(252,249,244,0.5); border-top:1px solid rgba(252,249,244,0.5);"></div>
+        <div style="position:absolute; right:18px; top:18px; width:18px; height:18px; border-right:1px solid rgba(252,249,244,0.5); border-top:1px solid rgba(252,249,244,0.5);"></div>
+        <div style="position:absolute; left:18px; bottom:18px; width:18px; height:18px; border-left:1px solid rgba(252,249,244,0.5); border-bottom:1px solid rgba(252,249,244,0.5);"></div>
+        <div style="position:absolute; right:18px; bottom:18px; width:18px; height:18px; border-right:1px solid rgba(252,249,244,0.5); border-bottom:1px solid rgba(252,249,244,0.5);"></div>
+        <!-- schematic plan -->
+        <div style="position:absolute; inset:0; display:grid; place-items:center; padding:72px 56px;">
+          <div style="position:relative; width:min(64%,580px); aspect-ratio:3/2;">
+            <!-- depth / second storey outline -->
+            <div style="position:absolute; inset:0; border:1px solid rgba(252,249,244,0.13); transform:translate(22px,-18px);"></div>
+            <!-- top dimension line -->
+            <div style="position:absolute; left:0; right:0; top:-30px; height:1px; background:rgba(252,249,244,0.32);"></div>
+            <div style="position:absolute; left:0; top:-35px; width:1px; height:11px; background:rgba(252,249,244,0.32);"></div>
+            <div style="position:absolute; right:0; top:-35px; width:1px; height:11px; background:rgba(252,249,244,0.32);"></div>
+            <span style="position:absolute; left:50%; top:-48px; transform:translateX(-50%); font-family:var(--font-mono); font-size:10px; letter-spacing:0.18em; color:rgba(252,249,244,0.55);">01 — 06</span>
+            <!-- left dimension line -->
+            <div style="position:absolute; top:0; bottom:0; left:-30px; width:1px; background:rgba(252,249,244,0.32);"></div>
+            <div style="position:absolute; left:-35px; top:0; height:1px; width:11px; background:rgba(252,249,244,0.32);"></div>
+            <div style="position:absolute; left:-35px; bottom:0; height:1px; width:11px; background:rgba(252,249,244,0.32);"></div>
+            <!-- footprint -->
+            <div style="position:absolute; inset:0; border:1px solid rgba(252,249,244,0.5);">
+              <!-- vertical walls -->
+              <div style="position:absolute; top:0; bottom:0; left:42%; width:1px; background:rgba(252,249,244,0.3);"></div>
+              <div style="position:absolute; top:0; bottom:0; left:70%; width:1px; background:rgba(252,249,244,0.3);"></div>
+              <!-- horizontal wall in right wing -->
+              <div style="position:absolute; left:70%; right:0; top:50%; height:1px; background:rgba(252,249,244,0.3);"></div>
+              <!-- accent decision room -->
+              <div style="position:absolute; left:42%; width:28%; top:0; bottom:0; border-left:1px solid rgba(255,180,169,0.6); border-right:1px solid rgba(255,180,169,0.6); background:rgba(255,180,169,0.05);"></div>
+              <!-- circulation / flow line -->
+              <div style="position:absolute; left:0; right:0; top:50%; height:1px; background:rgba(252,249,244,0.28);"></div>
+              <!-- nodes -->
+              <div style="position:absolute; left:21%; top:50%; width:6px; height:6px; background:rgba(252,249,244,0.55); border-radius:50%; transform:translate(-50%,-50%);"></div>
+              <div style="position:absolute; left:56%; top:50%; width:13px; height:13px; background:var(--inverse-primary); border-radius:50%; transform:translate(-50%,-50%); box-shadow:0 0 0 7px rgba(255,180,169,0.12);"></div>
+              <div style="position:absolute; left:85%; top:25%; width:6px; height:6px; background:rgba(252,249,244,0.55); border-radius:50%; transform:translate(-50%,-50%);"></div>
+              <div style="position:absolute; left:85%; top:75%; width:6px; height:6px; background:rgba(252,249,244,0.55); border-radius:50%; transform:translate(-50%,-50%);"></div>
+              <!-- room labels -->
+              <span style="position:absolute; left:8px; top:8px; font-family:var(--font-mono); font-size:9px; letter-spacing:0.12em; color:rgba(252,249,244,0.5);">INPUT</span>
+              <span style="position:absolute; left:43%; top:8px; font-family:var(--font-mono); font-size:9px; letter-spacing:0.12em; color:rgba(255,180,169,0.85);">DECISION</span>
+              <span style="position:absolute; left:71%; top:8px; font-family:var(--font-mono); font-size:9px; letter-spacing:0.12em; color:rgba(252,249,244,0.5);">OVERSIGHT</span>
+              <span style="position:absolute; left:71%; bottom:8px; font-family:var(--font-mono); font-size:9px; letter-spacing:0.12em; color:rgba(252,249,244,0.5);">FEEDBACK</span>
             </div>
-
-            <!-- 02 WHAT · Decision areas -->
-            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
-              <div style="background:var(--bg-sunken); padding:26px;">
-                <span class="meta">02 / What</span>
-                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Decision areas</h4>
-                <p class="small" style="font-size:13px;">What decisions should AI help us make?</p>
-              </div>
-              <div style="background:var(--line); display:grid; grid-template-columns:repeat(7,1fr); gap:1px;">
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">campaign</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Marketing</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Targeting, content, budget</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">sell</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Sales</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Lead scoring, next best action</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">inventory_2</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Operations</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Forecasting, inventory, routing</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">account_balance</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Finance</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Anomaly, credit, forecasting</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">group</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">People</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Talent, attrition, planning</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">gavel</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Risk &amp; compliance</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Fraud, monitoring, alerts</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">category</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Product</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Recommendations, A/B, roadmap</p></div>
-              </div>
-            </div>
-
-            <!-- 03 HOW · AI decision flow -->
-            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
-              <div style="background:var(--bg-sunken); padding:26px;">
-                <span class="meta">03 / How</span>
-                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">AI decision flow</h4>
-                <p class="small" style="font-size:13px;">How do we make AI-powered decisions?</p>
-              </div>
-              <div style="background:var(--line); display:grid; grid-template-columns:repeat(8,1fr); gap:1px;">
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">01</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Define</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Objectives &amp; success criteria</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">02</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Data</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Collect, prepare, validate</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">03</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Model</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Select, train, validate</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">04</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Evaluate</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Accuracy, fairness, bias</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">05</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Decide</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Prediction or recommendation</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">06</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Explain</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Rationale or explanation</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">07</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Act</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Execute, human-in-the-loop</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">08</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Monitor</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Performance, drift, feedback</p></div>
-              </div>
-            </div>
-
-            <!-- 04 WHO · Decision rights & oversight -->
-            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
-              <div style="background:var(--bg-sunken); padding:26px;">
-                <span class="meta">04 / Who</span>
-                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Decision rights &amp; oversight</h4>
-                <p class="small" style="font-size:13px;">Who makes the call, and with what authority?</p>
-              </div>
-              <div style="background:var(--line); display:grid; grid-template-columns:repeat(5,1fr); gap:1px;">
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">smart_toy</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">AI recommends</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Human reviews &amp; decides</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">person</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Human decides</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">With or without AI input</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">groups</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Shared decision</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">AI + human collaborate</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">memory</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">AI executes</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Within guardrails, overseen</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">neurology</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Autonomous AI</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Decides &amp; acts independently</p></div>
-              </div>
-            </div>
-
-            <!-- Guardrails strip -->
-            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
-              <div style="background:var(--bg-sunken); padding:20px 26px;"><span class="meta">Across all</span><div style="font-family:var(--font-headline); font-style:italic; font-size:18px; margin-top:6px;">Guardrails</div></div>
-              <div style="background:var(--bg); padding:18px 16px; display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
-                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">description</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Policies &amp; standards</span></span>
-                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">shield</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Risk &amp; compliance</span></span>
-                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">balance</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Ethics &amp; fairness</span></span>
-                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">lock</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Privacy &amp; security</span></span>
-                <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); padding:8px 14px;"><span class="material-symbols-outlined" style="font-size:16px; color:var(--primary);">pan_tool</span><span style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Human override</span></span>
-              </div>
-            </div>
-
-            <!-- 05 ENABLERS -->
-            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
-              <div style="background:var(--bg-sunken); padding:26px;">
-                <span class="meta">05 / Enablers</span>
-                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">What supports it</h4>
-                <p class="small" style="font-size:13px;">What supports our AI decision-making?</p>
-              </div>
-              <div style="background:var(--line); display:grid; grid-template-columns:repeat(6,1fr); gap:1px;">
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">database</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Data foundation</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Quality, governance, access</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">construction</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Platform &amp; tools</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">MLOps, APIs, feature store</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">hub</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Model &amp; tech</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">LLMs, algorithms, graphs</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">diversity_3</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">People &amp; skills</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Literacy, data science</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">account_tree</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Processes</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Lifecycle, change management</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="material-symbols-outlined" style="font-size:22px; color:var(--primary);">favorite</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Culture</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Trust, transparency</p></div>
-              </div>
-            </div>
-
-            <!-- 06 FEEDBACK -->
-            <div style="display:grid; grid-template-columns:208px 1fr; gap:1px; background:var(--line);">
-              <div style="background:var(--bg-sunken); padding:26px;">
-                <span class="meta">06 / Feedback</span>
-                <h4 class="display" style="font-size:21px; margin:10px 0 6px;">Learning loop</h4>
-                <p class="small" style="font-size:13px;">How do we learn and improve?</p>
-              </div>
-              <div style="background:var(--line); display:grid; grid-template-columns:repeat(5,1fr); gap:1px;">
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">01</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Measure</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">KPIs &amp; business impact</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">02</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Analyze</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Issues, bias, root causes</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">03</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Improve</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Retrain, refine, update</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">04</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Deploy</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Update safely (CI/CD)</p></div>
-                <div style="background:var(--bg); padding:16px;"><span class="meta" style="font-size:11px;">05</span><div style="font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin:8px 0 4px;">Learn</div><p style="font-size:11px; color:var(--body); line-height:1.45; margin:0;">Capture &amp; share insight</p></div>
-              </div>
-            </div>
-
           </div>
         </div>
-
-        <!-- Governance footer -->
-        <div style="border-top:1px solid var(--line); padding:32px; display:grid; grid-template-columns:repeat(4,1fr); gap:32px;">
-          <div>
-            <span class="meta" style="text-transform:uppercase;">Principles</span>
-            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
-              <li class="small" style="font-size:13px;">Human-centred</li><li class="small" style="font-size:13px;">Fair &amp; unbiased</li><li class="small" style="font-size:13px;">Transparent &amp; explainable</li><li class="small" style="font-size:13px;">Secure &amp; private</li><li class="small" style="font-size:13px;">Reliable &amp; safe</li><li class="small" style="font-size:13px;">Accountable</li>
-            </ul>
+        <!-- header labels -->
+        <span class="meta" style="position:absolute; left:32px; top:30px; color:var(--inverse-primary); text-transform:uppercase;">FIG. 03 · Decision architecture</span>
+        <p style="position:absolute; left:32px; bottom:34px; max-width:30ch; font-family:var(--font-headline); font-style:italic; font-size:clamp(19px,2.2vw,28px); line-height:1.2; color:var(--surface); margin:0;">A structure for deciding well, together.</p>
+        <!-- drafting title block -->
+        <div style="position:absolute; right:32px; bottom:32px; border:1px solid rgba(252,249,244,0.35); font-family:var(--font-mono); color:rgba(252,249,244,0.8); min-width:230px;">
+          <div style="padding:8px 12px; border-bottom:1px solid rgba(252,249,244,0.22); font-size:12px; letter-spacing:0.08em; font-weight:500;">THE PARADOX</div>
+          <div style="padding:8px 12px; border-bottom:1px solid rgba(252,249,244,0.22); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(252,249,244,0.6);">AI Decision Architecture</div>
+          <div style="display:flex;">
+            <div style="flex:1; padding:7px 12px; border-right:1px solid rgba(252,249,244,0.22); font-size:10px; letter-spacing:0.08em;">SHEET 03</div>
+            <div style="flex:1; padding:7px 12px; font-size:10px; letter-spacing:0.08em;">N.T.S.</div>
           </div>
-          <div>
-            <span class="meta" style="text-transform:uppercase;">Key controls</span>
-            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
-              <li class="small" style="font-size:13px;">Model risk management</li><li class="small" style="font-size:13px;">Data governance</li><li class="small" style="font-size:13px;">Bias &amp; fairness testing</li><li class="small" style="font-size:13px;">Explainability</li><li class="small" style="font-size:13px;">Monitoring &amp; alerting</li><li class="small" style="font-size:13px;">Audit logging</li>
-            </ul>
-          </div>
-          <div>
-            <span class="meta" style="text-transform:uppercase;">Roles</span>
-            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
-              <li class="small" style="font-size:13px;">Business owner</li><li class="small" style="font-size:13px;">Data owner</li><li class="small" style="font-size:13px;">Model owner</li><li class="small" style="font-size:13px;">AI / ML engineer</li><li class="small" style="font-size:13px;">Risk &amp; compliance</li><li class="small" style="font-size:13px;">End users</li>
-            </ul>
-          </div>
-          <div>
-            <span class="meta" style="text-transform:uppercase;">Documentation</span>
-            <ul style="list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:7px;">
-              <li class="small" style="font-size:13px;">Model cards</li><li class="small" style="font-size:13px;">Datasheets</li><li class="small" style="font-size:13px;">Decision logs</li><li class="small" style="font-size:13px;">Change history</li>
-            </ul>
-          </div>
+          <div style="padding:7px 12px; border-top:1px solid rgba(252,249,244,0.22); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--inverse-primary);">Status — In development</div>
         </div>
       </div>
       <div class="reveal bgrid bsunken" style="grid-template-columns:1fr 1fr;">
