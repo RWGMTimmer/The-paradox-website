@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Block nothing — full site is public
+Sitemap: https://the-paradox.com/sitemap.xml

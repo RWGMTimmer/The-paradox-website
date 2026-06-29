@@ -93,3 +93,23 @@ The site auto-deploys from the GitHub repo on every push to `main`:
 - [ ] **Imprint** — fill in the VAT/BTW number in `imprint.html` (the operating entity now reads "A Timmer Strategisch Advies BV initiative").
 - [ ] **Share card** — `og:image` currently points at the favicon; add a 1200×630 share image.
 - [ ] Optional: self-host the three Google fonts for full offline/independence.
+
+
+## SEO / findability
+
+The site now ships with the technical SEO foundation:
+
+- **`sitemap.xml`** — all 16 pages with `hreflang` alternates. 
+- **`robots.txt`** — allows all, points to the sitemap.
+- **Canonical + `hreflang`** tags on every page (en / nl / x-default), so Google treats EN and NL as translations, not duplicates.
+- **Open Graph + Twitter cards** on every page, with a real 1200×630 share image (`og-image.png`).
+- **JSON-LD structured data** — `Organization` on every page, plus `Person` (Robert Timmer) on the About pages.
+
+### After you deploy — do these (off-page, only you can)
+
+1. **Google Search Console** — add the property for `the-paradox.com`, verify (DNS or the HTML-tag method — I can drop the meta tag in for you), then **submit `https://the-paradox.com/sitemap.xml`**. This is the single most important step.
+2. **Backlinks** — get the site linked from your Nyenrode profile, LinkedIn (company + personal), and any keynote / award pages (World Pension Summit, Inclusive Fintech 50). New domains rank largely on who links to them.
+3. **`sameAs` in the Organization schema** — add your real LinkedIn/X URLs to the JSON-LD `Organization` block (currently omitted to avoid pointing at the wrong profile) so Google can connect the entity.
+4. **Publish the research** — the thirteen paradoxes, white papers, and keynotes as real pages targeting terms like "AI board governance" and "human–AI decision-making" are your strongest long-term SEO assets.
+
+> Note: titles, descriptions, and the share image are tuned but easy to refine per page — just ask.
