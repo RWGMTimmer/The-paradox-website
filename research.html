@@ -114,7 +114,7 @@
       <div class="reveal" style="max-width:60ch; margin-bottom:56px;">
         <p class="eyebrow">The core concept</p>
         <h2 class="display" style="font-style:italic; font-size:clamp(28px,3.8vw,48px);">A dual-bounded system.</h2>
-        <p class="body" style="margin-top:20px;">Human bounded rationality and AI&rsquo;s bounded learning do not cancel each other out. Where they overlap, their limits compound — and that intersection is where the thirteen paradoxes live.</p>
+        <p class="body" style="margin-top:20px;">Human bounded rationality and AI&rsquo;s bounded learning do not cancel each other out. Where they overlap, their limits compound — and that intersection is where the thirteen paradoxes live. Cognitive offloading to AI can progressively degrade the very judgment it was meant to support: AI does not simply augment human decision-making, it transforms it — creating new challenges alongside new capabilities.</p>
         <p class="body" style="margin-top:16px;"><a class="ulink" style="color:var(--primary); font-weight:600;" href="dual-bounded-system.html">Read the full concept — the dual-bounded system &rarr;</a></p>
       </div>
 
@@ -161,22 +161,6 @@
     </div>
   </section>
 
-  <!-- FEATURED -->
-  <section class="wrap sec" style="padding-top:0;">
-    <div class="reveal grid12" style="background:var(--bg-sunken); padding:64px; align-items:center;">
-      <div style="grid-column:span 5;">
-        <p class="meta" style="text-transform:uppercase; color:var(--body); margin-bottom:24px;">Featured Inquiry</p>
-        <h2 class="display" style="font-style:italic; font-size:clamp(28px,3.4vw,48px); color:var(--primary); margin-bottom:24px;">Dual Bounded Rationality</h2>
-        <p class="body" style="margin:0 0 24px;">Humans and AI each operate under distinct cognitive constraints. Their interaction in decision processes does not cancel these limitations. It compounds them. The research traces cascading dynamics where cognitive offloading to AI progressively degrades the judgment it was meant to support, and identifies the design principles that counter this erosion.</p>
-        <p class="small" style="font-style:italic;">AI does not simply augment human decision-making; it transforms it in ways that create new challenges alongside new capabilities.</p>
-      </div>
-      <div class="duotone grain" style="grid-column:7 / span 6; aspect-ratio:6/5; align-self:stretch; position:relative;">
-        <img src="research-dual-bounded-rationality.png" alt="Marble bust — bounded human judgment"/>
-        <span class="meta" style="position:absolute; left:32px; bottom:24px; color:var(--surface); z-index:4; text-transform:uppercase; font-size:11px;">FIG. 02 · Dual bounded rationality</span>
-      </div>
-    </div>
-  </section>
-
   <!-- INTELLECTUAL HONESTY -->
   <section class="wrap sec" style="text-align:center;">
     <div style="height:1px; background:var(--line); margin-bottom:80px;"></div>
@@ -191,26 +175,48 @@
     <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:1px solid var(--line); padding-bottom:32px; margin-bottom:64px;">
       <h3 class="display" style="font-style:italic; font-size:clamp(26px,3vw,36px);">Forthcoming Publications</h3>
     </div>
-    <div class="reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:48px;">
+    <div class="reveal" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:48px; align-items:start;">
       <article>
-        <div class="grain" style="position:relative; aspect-ratio:16/10; background:var(--on-surface); overflow:hidden; margin-bottom:24px;">
-          <div class="gridtex" style="position:absolute; inset:0; opacity:0.14;"></div>
-          <span class="meta" style="position:absolute; top:20px; left:20px; color:var(--inverse-primary); text-transform:uppercase; z-index:2;">White Paper</span>
-          <span class="meta" style="position:absolute; bottom:20px; right:20px; color:rgba(252,249,244,0.5); text-transform:uppercase; z-index:2;">In preparation · 2026</span>
+        <div style="display:flex; gap:18px; align-items:flex-start; margin-bottom:20px;">
+          <div style="position:relative; width:88px; flex:none; aspect-ratio:77/100; background:var(--bg); border:1px solid var(--line); box-shadow:0 10px 20px -12px rgba(28,28,25,0.3); overflow:hidden;">
+            <div style="position:absolute; left:0; top:0; bottom:0; width:6px; background-image:repeating-linear-gradient(-45deg, var(--outline-variant) 0 5px, transparent 5px 10px); opacity:0.6;"></div>
+            <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
+              <span style="width:22px; height:22px; background:var(--primary); display:grid; place-items:center;"><span style="font-family:var(--font-headline); font-weight:700; font-size:13px; color:var(--surface);">P</span></span>
+            </div>
+            <span style="position:absolute; bottom:5px; right:5px; font-family:var(--font-mono); font-size:7px; letter-spacing:0.05em; color:var(--body); text-transform:uppercase;">PDF</span>
+          </div>
+          <div>
+            <p class="meta" style="text-transform:uppercase; color:var(--body); margin-bottom:8px;">Decision architecture</p>
+            <h4 class="display" style="font-size:20px; line-height:1.15; margin-bottom:10px;">The Dual-Bounded Board</h4>
+            <span class="meta" style="display:inline-block; background:var(--primary); color:var(--on-primary); text-transform:uppercase; padding:4px 10px; font-size:8px; letter-spacing:0.08em;">Available now</span>
+          </div>
         </div>
-        <p class="meta" style="text-transform:uppercase; color:var(--body); margin-bottom:12px;">Decision architecture</p>
-        <h4 class="display" style="font-size:26px;">The Paradox of Ungoverned AI</h4>
-        <p class="small" style="margin-top:16px;">A practitioner-facing argument for why current governance frameworks are insufficient, and what a decision-architecture approach looks like in practice. Grounded in the thesis findings and contextualised against the current regulatory landscape.</p>
+        <p class="small" style="margin-bottom:20px;">A practitioner-facing argument for why current governance frameworks are insufficient when AI enters the boardroom — and what a decision-architecture approach looks like in real board practice.</p>
+        <button type="button" class="btn btn--outline btn--sm" onclick="openGate('whitepaper-the-dual-bounded-board.pdf','The Dual-Bounded Board')">Download the white paper</button>
+      </article>
+      <article>
+        <div style="display:flex; gap:18px; align-items:flex-start; margin-bottom:20px;">
+          <div style="position:relative; width:88px; flex:none; border:1px solid var(--line); box-shadow:0 10px 20px -12px rgba(28,28,25,0.3); overflow:hidden;">
+            <img src="thesis-cover.png" alt="Research cover — The paradox of human-AI collaborative decision-making: dealing with a dual-bounded system" style="width:100%; display:block;"/>
+          </div>
+          <div>
+            <p class="meta" style="text-transform:uppercase; color:var(--body); margin-bottom:8px;">Research</p>
+            <h4 class="display" style="font-size:20px; line-height:1.15; margin-bottom:10px;">The paradox of human–AI collaborative decision-making</h4>
+            <span class="meta" style="display:inline-block; background:var(--primary); color:var(--on-primary); text-transform:uppercase; padding:4px 10px; font-size:8px; letter-spacing:0.08em;">Available on request</span>
+          </div>
+        </div>
+        <p class="small" style="margin-bottom:20px;">The complete thesis document behind everything above — methodology, literature review, and full findings, unabridged.</p>
+        <a class="btn btn--outline btn--sm" href="mailto:robert.timmer@the-paradox.com?subject=Research%20request%20%E2%80%94%20The%20paradox%20of%20human%E2%80%93AI%20collaborative%20decision-making" style="width:100%; justify-content:center;">Request the research</a>
       </article>
       <article>
         <div class="grain" style="position:relative; aspect-ratio:16/10; background:var(--tertiary); overflow:hidden; margin-bottom:24px;">
           <div class="gridtex" style="position:absolute; inset:0; opacity:0.12;"></div>
           <span class="meta" style="position:absolute; top:20px; left:20px; color:var(--tertiary-fixed-dim); text-transform:uppercase; z-index:2;">Academic</span>
-          <span class="meta" style="position:absolute; bottom:20px; right:20px; color:rgba(252,249,244,0.5); text-transform:uppercase; z-index:2;">Peer-reviewed · 2026–2027</span>
+          <span class="meta" style="position:absolute; bottom:20px; right:20px; color:rgba(252,249,244,0.5); text-transform:uppercase; z-index:2;">Future publication · 2026–2027</span>
         </div>
         <p class="meta" style="text-transform:uppercase; color:var(--body); margin-bottom:12px;">Human–AI collaboration</p>
         <h4 class="display" style="font-size:26px;">A decision architecture for human–AI collaboration under uncertainty</h4>
-        <p class="small" style="margin-top:16px;">A peer-reviewed contribution with Prof. Dr. Henry Robben, positioning dual bounded rationality within the decision-making literature. Target: <span style="font-style:italic;">Business Horizons</span>.</p>
+        <p class="small" style="margin-top:16px;">One of several future publications extending this research into the wider decision-making literature.</p>
       </article>
     </div>
   </section>
@@ -236,6 +242,73 @@
   <div class="meta" style="color:var(--body);">© 2026 The Paradox</div>
 </div></footer>
 
+<div class="gate-overlay" id="gateOverlay" style="display:none; position:fixed; inset:0; z-index:100; background:rgba(28,28,25,0.55); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:24px;">
+  <div style="background:var(--bg); max-width:560px; width:100%; border:1px solid var(--line); position:relative; padding:56px 48px;">
+    <button id="gateClose" aria-label="Close" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:24px; color:var(--ink); cursor:pointer; line-height:1;">×</button>
+    <div id="gateFormWrap">
+      <p class="eyebrow" style="margin-bottom:16px;">White Paper</p>
+      <h3 class="display" style="font-size:26px; margin-bottom:12px;" id="gateTitle">The Dual-Bounded Board</h3>
+      <p class="small" style="margin-bottom:32px;">A few details before the download — this lets us follow up if you&rsquo;d like to discuss it.</p>
+      <form id="gateForm" action="FORMSPREE_ENDPOINT" method="POST">
+        <input type="hidden" name="paper" id="gatePaperField" value="The Dual-Bounded Board"/>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:28px;">
+          <label class="field"><span>Full Name</span><input type="text" name="fullName" placeholder="Required" required/></label>
+          <label class="field"><span>Email</span><input type="email" name="email" placeholder="Required" required/></label>
+          <label class="field"><span>Company</span><input type="text" name="company" placeholder="Required" required/></label>
+          <label class="field"><span>Location</span><input type="text" name="location" placeholder="City, Country" required/></label>
+        </div>
+        <label class="field" style="margin-bottom:32px;"><span>Title / Role</span><input type="text" name="title" placeholder="Required" required/></label>
+        <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Continue to download</button>
+      </form>
+    </div>
+    <div id="gateSuccess" style="display:none; text-align:center;">
+      <p class="eyebrow" style="margin-bottom:16px;">Thank you</p>
+      <h3 class="display" style="font-size:26px; margin-bottom:16px;">Your download is ready.</h3>
+      <p class="small" style="margin-bottom:32px;">If it doesn&rsquo;t start automatically, use the button below.</p>
+      <a id="gateDownloadLink" class="btn btn--primary" href="#" download style="width:100%; justify-content:center;">Download PDF</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var overlay=document.getElementById('gateOverlay');
+  var formWrap=document.getElementById('gateFormWrap');
+  var success=document.getElementById('gateSuccess');
+  var form=document.getElementById('gateForm');
+  var titleEl=document.getElementById('gateTitle');
+  var paperField=document.getElementById('gatePaperField');
+  var downloadLink=document.getElementById('gateDownloadLink');
+  var pendingFile='';
+  window.openGate=function(file,title){
+    pendingFile=file;
+    titleEl.textContent=title;
+    paperField.value=title;
+    formWrap.style.display='block'; success.style.display='none';
+    form.reset();
+    overlay.style.display='flex';
+  };
+  function closeGate(){ overlay.style.display='none'; }
+  document.getElementById('gateClose').addEventListener('click', closeGate);
+  overlay.addEventListener('click', function(e){ if(e.target===overlay) closeGate(); });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    function reveal(){
+      formWrap.style.display='none';
+      success.style.display='block';
+      downloadLink.href=pendingFile;
+      downloadLink.setAttribute('download','');
+      downloadLink.click();
+    }
+    if(form.action.indexOf('FORMSPREE_ENDPOINT')!==-1){ reveal(); return; }
+    var btn=form.querySelector('button[type=submit]');
+    btn.disabled=true; btn.textContent='Please wait…';
+    fetch(form.action, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} })
+      .then(function(r){ btn.disabled=false; btn.textContent='Continue to download'; if(r.ok){ reveal(); } })
+      .catch(function(){ btn.disabled=false; btn.textContent='Continue to download'; });
+  });
+})();
+</script>
 <script src="site.js"></script>
 </body>
 </html>
